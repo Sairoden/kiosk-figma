@@ -5,31 +5,31 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 // ASSETS
-import register2 from "../../assets/images/registration/register2.png";
+import register43 from "../../assets/images/registration/register4-3.png";
 
-export default function Register2() {
+export default function Register43() {
   return (
     <div>
-      <img src={register2} alt="Register 2" />
+      <img src={register43} alt="Register 4" />
 
       <Link to="/">
         <ReturnButton></ReturnButton>
       </Link>
 
-      <Link to="/register1">
+      <Link to="/register4-1">
         <PrevButton></PrevButton>
       </Link>
 
-      <Link to="/register3-1">
-        <FingerPrintButton></FingerPrintButton>
+      <Link to="/register5-1">
+        <GovernmentIDButton></GovernmentIDButton>
       </Link>
     </div>
   );
 }
 
-const FingerPrintButton = styled.button`
+const GovernmentIDButton = styled.button`
   position: absolute;
-  top: 63rem;
+  top: 180rem;
   left: 25rem;
   padding: 18rem 23rem;
   opacity: 0;
