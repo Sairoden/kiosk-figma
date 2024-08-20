@@ -10,9 +10,7 @@ import register6 from "../../assets/images/registration/register6.png";
 export default function Register6() {
   return (
     <div>
-      <Img>
-        <img src={register6} alt="Register 6" />
-      </Img>
+      <Img src={register6} alt="Register 6" />
 
       <Link to="/">
         <ReturnButton></ReturnButton>

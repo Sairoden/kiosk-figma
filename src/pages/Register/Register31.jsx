@@ -21,19 +21,36 @@ export default function Register31() {
   }, [navigate]);
 
   return (
-    <div>
-      <img src={register31} alt="Register 3" />
+    <StyledContainer>
+      <StyledImage src={register31} alt="Register 3" />
       <Link to="/register2">
         <NextButton></NextButton>
       </Link>
-    </div>
+    </StyledContainer>
   );
 }
 
+const StyledContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+`;
+
+const StyledImage = styled.img`
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  box-sizing: border-box;
+`;
+
 const NextButton = styled.button`
   position: absolute;
-  bottom: -42rem;
-  right: 22rem;
+  bottom: 500px;
+  right: 125px;
   padding: 5rem 25rem;
+
   opacity: 0;
 `;

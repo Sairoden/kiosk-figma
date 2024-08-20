@@ -21,20 +21,35 @@ export default function Register41() {
   }, [navigate]);
 
   return (
-    <div>
-      <img src={register41} alt="Register 4" />
+    <StyledContainer>
+      <StyledImage src={register41} alt="Register 4" />
       <Link to="/register3-3">
         <NextButton></NextButton>
       </Link>
-      *
-    </div>
+    </StyledContainer>
   );
 }
 
+const StyledContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+`;
+
+const StyledImage = styled.img`
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  box-sizing: border-box;
+`;
+
 const NextButton = styled.button`
   position: absolute;
-  bottom: -52rem;
-  right: 22rem;
+  bottom: 350px;
+  right: 150px;
   padding: 5rem 25rem;
   opacity: 0;
 `;

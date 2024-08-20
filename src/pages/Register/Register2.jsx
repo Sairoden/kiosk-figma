@@ -9,8 +9,8 @@ import register2 from "../../assets/images/registration/register2.png";
 
 export default function Register2() {
   return (
-    <div>
-      <img src={register2} alt="Register 2" />
+    <StyledContainer>
+      <StyledImage src={register2} alt="Register 2" />
 
       <Link to="/">
         <ReturnButton></ReturnButton>
@@ -23,14 +23,30 @@ export default function Register2() {
       <Link to="/register3-1">
         <FingerPrintButton></FingerPrintButton>
       </Link>
-    </div>
+    </StyledContainer>
   );
 }
 
+const StyledContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+`;
+
+const StyledImage = styled.img`
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  box-sizing: border-box;
+`;
+
 const FingerPrintButton = styled.button`
   position: absolute;
-  top: 62rem;
-  left: 12rem;
+  top: 900px;
+  left: 200px;
   padding: 18rem 23rem;
   opacity: 0;
 `;
@@ -45,8 +61,8 @@ const ReturnButton = styled.button`
 
 const PrevButton = styled.button`
   position: absolute;
-  bottom: -150rem;
-  left: 10rem;
+  bottom: 80px;
+  left: 150px;
   padding: 5rem 13rem;
   opacity: 0;
 `;

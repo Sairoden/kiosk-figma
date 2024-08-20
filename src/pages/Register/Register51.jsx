@@ -10,9 +10,8 @@ import register51 from "../../assets/images/registration/register5-1.png";
 export default function Register51() {
   return (
     <div>
-      <Img>
-        <img src={register51} alt="Register 5" />
-      </Img>
+      <Img src={register51} alt="Register 5" />
+
       <Link to="/register4-3">
         <NextButton></NextButton>
       </Link>
