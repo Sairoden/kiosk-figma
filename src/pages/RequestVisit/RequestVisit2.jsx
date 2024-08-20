@@ -5,7 +5,7 @@ import visit2 from "../../assets/images/requestToVisit/visit2-2.png";
 
 export default function RequestVisit2() {
   return (
-    <div>
+    <Container>
       {" "}
       <Link to="/requestVisit1">
         <Img src={visit2} alt="visit2"></Img>
@@ -14,9 +14,15 @@ export default function RequestVisit2() {
       <Link to="/requestVisit9">
         <BackButton>Facescan</BackButton>
       </Link>
-    </div>
+    </Container>
   );
 }
+const Container = styled.div`
+  position: relative; /* Ensure absolute positioning works */
+  width: 100%;
+  height: 200vh; /* Full height for the container */
+  overflow: hidden; /* Prevent overflow */
+`;
 
 const Img = styled.img`
   width: 100%;

@@ -6,7 +6,7 @@ import { useRef } from "react";
 
 export default function RequestVisit3() {
   return (
-    <div>
+    <Container>
       {" "}
       <Link to="/requestVisit4">
         <Img src={visit3} alt="visit3"></Img>
@@ -18,10 +18,15 @@ export default function RequestVisit3() {
       <Link to="/">
         <ReturnButton>Return button</ReturnButton>
       </Link>
-    </div>
+    </Container>
   );
 }
-
+const Container = styled.div`
+  position: relative; /* Ensure absolute positioning works */
+  width: 100%;
+  height: 200vh; /* Full height for the container */
+  overflow: hidden; /* Prevent overflow */
+`;
 const Img = styled.img`
   width: 100%;
   height: auto;
@@ -31,7 +36,7 @@ const HiddenButton = styled.button`
   width: 40%;
   height: 10%;
   position: absolute; /* Position it absolutely */
-  top: 180%;
+  top: 90%;
   left: 50%;
   right: 0%;
   opacity: 0;
@@ -40,7 +45,7 @@ const HiddenButton = styled.button`
 const BackButton = styled.button`
   width: 40%;
   height: 10%; /* Make it half the height of the container */
-  top: 180%; /* Space between buttons */
+  top: 90%; /* Space between buttons */
   left: 10%;
   position: absolute; /* Position relative to the container */
   opacity: 0;

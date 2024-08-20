@@ -5,16 +5,21 @@ import visit6 from "../../assets/images/requestToVisit/visit6.png";
 
 export default function RequestVisit6() {
   return (
-    <div>
+    <Container>
       {" "}
       <Link to="/">
         <Img src={visit6} alt="visit6"></Img>
         <BackButton>Next Button</BackButton>
       </Link>
-    </div>
+    </Container>
   );
 }
-
+const Container = styled.div`
+  position: relative; /* Ensure absolute positioning works */
+  width: 100%;
+  height: 140vh; /* Full height for the container */
+  overflow: hidden; /* Prevent overflow */
+`;
 const Img = styled.img`
   width: 100%;
   height: auto;
@@ -23,7 +28,7 @@ const Img = styled.img`
 const BackButton = styled.button`
   width: 70%;
   height: 10%; /* Make it half the height of the container */
-  top: 126%; /* Space between buttons */
+  top: 90%; /* Space between buttons */
   left: 18%;
   position: absolute; /* Position relative to the container */
   opacity: 0;

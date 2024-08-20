@@ -12,7 +12,7 @@ export default function RequestVisit4() {
     }
   };
   return (
-    <div>
+    <Container>
       {" "}
       <Link to="/requestVisit5">
         <Img src={visit4} alt="visit4" onClick={handleImageClick}></Img>
@@ -24,9 +24,15 @@ export default function RequestVisit4() {
       <Link to="/">
         <ReturnButton>Return button</ReturnButton>
       </Link>
-    </div>
+    </Container>
   );
 }
+const Container = styled.div`
+  position: relative; /* Ensure absolute positioning works */
+  width: 100%;
+  height: 140vh; /* Full height for the container */
+  overflow: hidden; /* Prevent overflow */
+`;
 
 const Img = styled.img`
   width: 100%;
@@ -37,7 +43,7 @@ const NextButton = styled.button`
   width: 40%;
   height: 10%;
   position: absolute; /* Position it absolutely */
-  top: 125%;
+  top: 90%;
   left: 50%;
   right: 0%;
   opacity: 0;
@@ -46,7 +52,7 @@ const NextButton = styled.button`
 const BackButton = styled.button`
   width: 40%;
   height: 10%; /* Make it half the height of the container */
-  top: 125%; /* Space between buttons */
+  top: 90%; /* Space between buttons */
   left: 10%;
   position: absolute; /* Position relative to the container */
   opacity: 0;
