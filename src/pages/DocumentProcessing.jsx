@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 // ASSETS
-import dp1 from "../assets/images/documentProcessing/dp1-1.png";
+import dp1 from "../assets/images/documentProcessing/dp1.png";
 
 export default function YourComponent() {
   return (
