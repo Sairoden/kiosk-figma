@@ -4,7 +4,8 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 // PAGES
 import {
   LandingPage,
-  DocumentProcessing,
+  DocumentProcessing1,
+  DocumentProcessing2,
   SecondPage,
 
   // REGISTRATION
@@ -24,8 +25,6 @@ function App() {
       <HashRouter>
         <Routes>
           <Route path="/" index element={<LandingPage />} />
-          <Route path="/documentProcessing" element={<DocumentProcessing />} />
-          <Route path="/secondPage" element={<SecondPage />} />
 
           {/* RERGISTRATION */}
           <Route path="/register1" element={<Register1 />} />
@@ -36,6 +35,18 @@ function App() {
           <Route path="/register4" element={<Register4 />} />
           <Route path="/register5" element={<Register5 />} />
           <Route path="/register6" element={<Register6 />} />
+
+          {/* DOCUMENT PROCESSING */}
+          <Route
+            path="/documentProcessing1"
+            element={<DocumentProcessing1 />}
+          />
+          <Route
+            path="/documentProcessing2"
+            element={<DocumentProcessing2 />}
+          />
+
+          <Route path="/secondPage" element={<SecondPage />} />
         </Routes>
       </HashRouter>
     </>

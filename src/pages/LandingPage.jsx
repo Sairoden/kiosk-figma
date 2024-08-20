@@ -11,14 +11,14 @@ export default function YourComponent() {
   return (
     <StyledContainer>
       <StyledImage src={homepage} alt="Homepage" />
-      <Link to="/documentProcessing">
-        <StyledButtons>
-          <StyledButton1>Registration Registration</StyledButton1>
+      <StyledButtons>
+        <StyledButton1>Registration Registration</StyledButton1>
+        <Link to="/documentProcessing1">
           <StyledButton2>Document Processing</StyledButton2>
-          <StyledButton3>Payment Payment</StyledButton3>
-          <StyledButton4>Request to Visit</StyledButton4>
-        </StyledButtons>
-      </Link>
+        </Link>
+        <StyledButton3>Payment Payment</StyledButton3>
+        <StyledButton4>Request to Visit</StyledButton4>
+      </StyledButtons>
     </StyledContainer>
   );
 }
