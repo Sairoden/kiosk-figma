@@ -11,22 +11,26 @@ import camera from "../assets/images/camera.png";
 export default function Layout() {
   const [isFixed, setIsFixed] = useState(true);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const scrollPosition = window.scrollY;
-  //     if (scrollPosition > window.innerHeight) {
-  //       setIsFixed(false);
-  //     } else {
-  //       setIsFixed(true);
-  //     }
-  //   };
-  // , [])
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > window.innerHeight) {
+        setIsFixed(false);
+      } else {
+        setIsFixed(true);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <StyledLayout>
-      <StyledImage src={camera} alt="Camera" />
-
-      <StyledContent>
+      <StyledImage src={camera} alt="Camera" isFixed={isFixed} />
+      <StyledContent isFixed={isFixed}>
         <Outlet />
       </StyledContent>
     </StyledLayout>
@@ -43,15 +47,16 @@ const StyledLayout = styled.div`
 `;
 
 const StyledImage = styled.img`
-  position: fixed;
-  top: 0;
+  position: ${({ isFixed }) => (isFixed ? "fixed" : "static")};
+  top: ${({ isFixed }) => (isFixed ? "0" : "auto")};
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
+  margin-top: ${({ isFixed }) => (isFixed ? "0" : "100vh")};
 `;
 
 const StyledContent = styled.div`
-  margin-top: 100px;
+  margin-top: ${({ isFixed }) => (isFixed ? "100px" : "0")};
   width: 100%;
   padding: 20px;
 `;
