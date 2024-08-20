@@ -12,6 +12,9 @@ export default function RequestVisit1() {
       <Link to="/">
         <BackButton>Back button</BackButton>
       </Link>
+      <Link to="/">
+        <ReturnButton>Return button</ReturnButton>
+      </Link>
     </div>
   );
 }
@@ -32,10 +35,19 @@ const NextButton = styled.button`
 `;
 
 const BackButton = styled.button`
-  width: 70%;
+  width: 30%;
   height: 10%; /* Make it half the height of the container */
   top: 180%; /* Space between buttons */
   left: 15%;
+  position: absolute; /* Position relative to the container */
+  opacity: 0;
+`;
+
+const ReturnButton = styled.button`
+  width: 30%;
+  height: 10%; /* Make it half the height of the container */
+  top: 2%; /* Space between buttons */
+  left: 0%;
   position: absolute; /* Position relative to the container */
   opacity: 0;
 `;
