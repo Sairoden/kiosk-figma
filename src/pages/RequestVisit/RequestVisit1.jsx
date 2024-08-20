@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import visit1 from "../../assets/images/requestToVisit/Visit1.png";
+import visit1 from "../../assets/images/requestToVisit/visit1.png";
 
 export default function RequestVisit1() {
   return (
@@ -9,8 +9,11 @@ export default function RequestVisit1() {
         <Img src={visit1} alt="visit1" />
         <NextButton>FaceScan</NextButton>
       </Link>
-      <Link to="/requestvisit9">
+      <Link to="/">
         <BackButton>Back button</BackButton>
+      </Link>
+      <Link to="/">
+        <ReturnButton>Return button</ReturnButton>
       </Link>
     </div>
   );
@@ -32,10 +35,19 @@ const NextButton = styled.button`
 `;
 
 const BackButton = styled.button`
-  width: 70%;
-  height: 40%; /* Make it half the height of the container */
-  top: 130%; /* Space between buttons */
+  width: 30%;
+  height: 10%; /* Make it half the height of the container */
+  top: 180%; /* Space between buttons */
   left: 15%;
+  position: absolute; /* Position relative to the container */
+  opacity: 0;
+`;
+
+const ReturnButton = styled.button`
+  width: 30%;
+  height: 10%; /* Make it half the height of the container */
+  top: 2%; /* Space between buttons */
+  left: 0%;
   position: absolute; /* Position relative to the container */
   opacity: 0;
 `;

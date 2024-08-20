@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import visit4 from "../../assets/images/requestToVisit/Visit4.png";
+import visit4 from "../../assets/images/requestToVisit/visit4.png";
 import { useRef } from "react";
 
 export default function RequestVisit4() {
@@ -20,6 +20,9 @@ export default function RequestVisit4() {
       </Link>
       <Link to="/requestVisit3">
         <BackButton ref={buttonRef}>Back Button</BackButton>
+      </Link>
+      <Link to="/">
+        <ReturnButton>Return button</ReturnButton>
       </Link>
     </div>
   );
@@ -45,6 +48,15 @@ const BackButton = styled.button`
   height: 10%; /* Make it half the height of the container */
   top: 125%; /* Space between buttons */
   left: 10%;
+  position: absolute; /* Position relative to the container */
+  opacity: 0;
+`;
+
+const ReturnButton = styled.button`
+  width: 30%;
+  height: 10%; /* Make it half the height of the container */
+  top: 2%; /* Space between buttons */
+  left: 0%;
   position: absolute; /* Position relative to the container */
   opacity: 0;
 `;

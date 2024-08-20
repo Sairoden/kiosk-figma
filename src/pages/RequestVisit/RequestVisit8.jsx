@@ -1,16 +1,30 @@
-import React from "react";
-import { Link } from "react-router-dom";
+// REACT
+import { Link, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+
 import styled from "styled-components";
-import visit2 from "../../assets/images/requestToVisit/visit2-1.png";
+import visit2 from "../../assets/images/requestToVisit/Visitor Request - Fingerprint Scanning.gif";
 
 // Scan fingerprint
 export default function RequestVisit8() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigate("/requestVisit2");
+    }, 3000);
+
+    // Cleanup the timer if the component unmounts before 2 seconds
+    return () => clearTimeout(timer);
+  }, [navigate]);
+
   return (
     <div>
       <Link to="/requestVisit2">
         <Img src={visit2} alt="visit1" />
         <NextButton>fingerprint</NextButton>
       </Link>
+
       <Link to="/requestVisit1">
         <BackButton>back</BackButton>
       </Link>
@@ -25,9 +39,9 @@ const Img = styled.img`
 
 const NextButton = styled.button`
   width: 60%;
-  height: 40%;
+  height: 30%;
   position: absolute; /* Position it absolutely */
-  top: 80%;
+  top: 60%;
   left: 20%;
   right: 0%;
   opacity: 0;

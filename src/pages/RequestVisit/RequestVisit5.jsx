@@ -14,6 +14,9 @@ export default function RequestVisit5() {
       <Link to="/requestVisit4">
         <BackButton>Back Button</BackButton>
       </Link>
+      <Link to="/">
+        <ReturnButton>Return button</ReturnButton>
+      </Link>
     </div>
   );
 }
@@ -38,6 +41,15 @@ const BackButton = styled.button`
   height: 10%; /* Make it half the height of the container */
   top: 84%; /* Space between buttons */
   left: 10%;
+  position: absolute; /* Position relative to the container */
+  opacity: 0;
+`;
+
+const ReturnButton = styled.button`
+  width: 30%;
+  height: 10%; /* Make it half the height of the container */
+  top: 2%; /* Space between buttons */
+  left: 0%;
   position: absolute; /* Position relative to the container */
   opacity: 0;
 `;

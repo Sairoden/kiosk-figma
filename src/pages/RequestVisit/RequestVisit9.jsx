@@ -1,9 +1,22 @@
-import React from "react";
-import { Link } from "react-router-dom";
+// REACT
+import { Link, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+
 import styled from "styled-components";
-import visit9 from "../../assets/images/requestToVisit/visit3-1.png";
+import visit9 from "../../assets/images/requestToVisit/Face ID Scan3.gif";
 
 export default function RequestVisit9() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigate("/requestVisit3");
+    }, 3000);
+
+    // Cleanup the timer if the component unmounts before 2 seconds
+    return () => clearTimeout(timer);
+  }, [navigate]);
+
   return (
     <div>
       <Link to="/requestVisit3">

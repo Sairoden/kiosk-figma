@@ -7,7 +7,7 @@ export default function RequestVisit2() {
   return (
     <div>
       {" "}
-      <Link to="/requestVisit2">
+      <Link to="/requestVisit1">
         <Img src={visit2} alt="visit2"></Img>
         <HiddenButton>Back Button</HiddenButton>
       </Link>

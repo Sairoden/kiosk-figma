@@ -12,8 +12,11 @@ export default function RequestVisit3() {
         <Img src={visit3} alt="visit3"></Img>
         <HiddenButton>Next Button</HiddenButton>
       </Link>
-      <Link to="/requestVisit3">
+      <Link to="/requestVisit2">
         <BackButton>Back Button</BackButton>
+      </Link>
+      <Link to="/">
+        <ReturnButton>Return button</ReturnButton>
       </Link>
     </div>
   );
@@ -39,6 +42,15 @@ const BackButton = styled.button`
   height: 10%; /* Make it half the height of the container */
   top: 180%; /* Space between buttons */
   left: 10%;
+  position: absolute; /* Position relative to the container */
+  opacity: 0;
+`;
+
+const ReturnButton = styled.button`
+  width: 30%;
+  height: 10%; /* Make it half the height of the container */
+  top: 2%; /* Space between buttons */
+  left: 0%;
   position: absolute; /* Position relative to the container */
   opacity: 0;
 `;
