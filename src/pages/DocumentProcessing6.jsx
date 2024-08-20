@@ -6,7 +6,7 @@ import { useNavigate, Link } from "react-router-dom";
 import styled from "styled-components";
 
 // ASSETS
-import dp6_1 from "../assets/images/documentProcessing/dp6-1.png";
+import dp6_1 from "../assets/images/documentProcessing/dp6.png";
 
 export default function DocumentProcessing6() {
   const navigate = useNavigate();
