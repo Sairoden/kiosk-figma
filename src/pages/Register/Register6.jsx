@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 // ASSETS
-import register6 from "../assets/images/registration/register6.png";
+import register6 from "../../assets/images/registration/register6.png";
 
 export default function Register6() {
   return (

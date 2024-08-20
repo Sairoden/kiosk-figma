@@ -5,22 +5,22 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 // ASSETS
-import register5 from "../assets/images/registration/register5.png";
+import register1 from "../../assets/images/registration/register1.png";
 
-export default function Register5() {
+export default function Register1() {
   return (
     <div>
-      <img src={register5} alt="Register 5" />
+      <img src={register1} alt="Register 1" />
 
       <Link to="/">
         <ReturnButton></ReturnButton>
       </Link>
 
-      <Link to="/register4">
+      <Link to="/">
         <PrevButton></PrevButton>
       </Link>
 
-      <Link to="/register6">
+      <Link to="/register2">
         <NextButton></NextButton>
       </Link>
     </div>
@@ -30,23 +30,26 @@ export default function Register5() {
 const ReturnButton = styled.button`
   position: absolute;
   top: 3rem;
-  left: 5rem;
+  left: 12rem;
   padding: 4rem 15rem;
-  opacity: 0;
+  /* opacity: 0; */
+  background-color: red;
 `;
 
 const PrevButton = styled.button`
   position: absolute;
-  bottom: 1rem;
-  left: 8rem;
+  bottom: -72rem;
+  left: 20rem;
   padding: 5rem 13rem;
-  opacity: 0;
+  /* opacity: 0; */
+  background-color: red;
 `;
 
 const NextButton = styled.button`
   position: absolute;
-  bottom: 1rem;
-  right: 5rem;
+  bottom: -72rem;
+  right: 20rem;
   padding: 5rem 13rem;
-  opacity: 0;
+  /* opacity: 0; */
+  background-color: red;
 `;

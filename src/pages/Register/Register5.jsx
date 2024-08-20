@@ -5,40 +5,48 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 // ASSETS
-import register21 from "../assets/images/registration/register2-1.png";
-import register22 from "../assets/images/registration/register2-2.png";
+import register5 from "../../assets/images/registration/register5.png";
 
-export default function Register21() {
+export default function Register5() {
   return (
     <div>
-      <img src={register21} alt="Register 21" />
-      <img src={register22} alt="Register 22" />
+      <img src={register5} alt="Register 5" />
 
       <Link to="/">
+        <ReturnButton></ReturnButton>
+      </Link>
+
+      <Link to="/register4">
         <PrevButton></PrevButton>
       </Link>
 
-      <Link to="/register21">
+      <Link to="/register6">
         <NextButton></NextButton>
       </Link>
     </div>
   );
 }
 
-const PrevButton = styled.button`
-  background-color: red;
+const ReturnButton = styled.button`
   position: absolute;
-  bottom: -37rem;
+  top: 3rem;
+  left: 5rem;
+  padding: 4rem 15rem;
+  opacity: 0;
+`;
+
+const PrevButton = styled.button`
+  position: absolute;
+  bottom: 1rem;
   left: 8rem;
   padding: 5rem 13rem;
-  /* opacity: 0; */
+  opacity: 0;
 `;
 
 const NextButton = styled.button`
-  background-color: red;
   position: absolute;
-  bottom: -37rem;
+  bottom: 1rem;
   right: 5rem;
   padding: 5rem 13rem;
-  /* opacity: 0; */
+  opacity: 0;
 `;
