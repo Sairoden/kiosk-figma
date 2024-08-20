@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import visit6 from "../../assets/images/requestToVisit/visit6.png";
+import visit6 from "../../assets/images/requestToVisit/Visit6.png";
 
 export default function RequestVisit6() {
   return (

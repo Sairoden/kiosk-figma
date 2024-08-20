@@ -24,16 +24,16 @@ export default function Register51() {
 
 const NextButton = styled.button`
   position: absolute;
-  bottom: -61rem;
-  right: 22rem;
+  bottom: -25rem;
+  right: 6rem;
   padding: 5rem 25rem;
   opacity: 0;
 `;
 
 const NextButton2 = styled.button`
   position: absolute;
-  bottom: -49rem;
-  right: 22rem;
+  bottom: -15rem;
+  right: 6rem;
   padding: 5rem 25rem;
   opacity: 0;
 `;

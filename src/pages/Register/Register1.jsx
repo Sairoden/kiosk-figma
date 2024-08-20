@@ -37,16 +37,16 @@ const ReturnButton = styled.button`
 
 const PrevButton = styled.button`
   position: absolute;
-  bottom: -72rem;
-  left: 20rem;
+  bottom: -37rem;
+  left: 10rem;
   padding: 5rem 13rem;
   opacity: 0;
 `;
 
 const NextButton = styled.button`
   position: absolute;
-  bottom: -72rem;
-  right: 20rem;
+  bottom: -37rem;
+  right: 4rem;
   padding: 5rem 13rem;
   opacity: 0;
 `;

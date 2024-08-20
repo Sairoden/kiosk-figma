@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import visit4 from "../../assets/images/requestToVisit/visit4.png";
+import visit4 from "../../assets/images/requestToVisit/Visit4.png";
 import { useRef } from "react";
 
 export default function RequestVisit4() {
