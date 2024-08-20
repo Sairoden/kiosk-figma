@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/KioskFigma" version="0.2.1" viewmodes="maximized">
-    <tizen:application id="tY5RwjJ6pA.KioskFigma" package="tY5RwjJ6pA" required_version="2.3"/>
+    <tizen:application id="8hqDKb6B2g.KioskFigma" package="8hqDKb6B2g" required_version="2.3"/>
+    <author>Ebizolution</author>
     <content src="index.html"/>
     <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
     <icon src="icon.png"/>
