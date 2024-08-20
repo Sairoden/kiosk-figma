@@ -14,14 +14,25 @@ export default function Register51() {
       <Link to="/register4-3">
         <NextButton></NextButton>
       </Link>
-      *
+
+      <Link to="/register5-3">
+        <NextButton2></NextButton2>
+      </Link>
     </div>
   );
 }
 
 const NextButton = styled.button`
   position: absolute;
-  bottom: -53rem;
+  bottom: -61rem;
+  right: 22rem;
+  padding: 5rem 25rem;
+  opacity: 0;
+`;
+
+const NextButton2 = styled.button`
+  position: absolute;
+  bottom: -49rem;
   right: 22rem;
   padding: 5rem 25rem;
   opacity: 0;
