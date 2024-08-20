@@ -1,28 +1,36 @@
 // REACT
-// import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useNavigate, Link } from "react-router-dom";
 
 // STYLES
 import styled from "styled-components";
 
 // ASSETS
-import dp1 from "../assets/images/documentProcessing/dp1.png";
+import dp3_1 from "../../assets/images/documentProcessing/dp3.1.gif";
 
-export default function DocumentProcessing1() {
+export default function DocumentProcessing3() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigate("/documentProcessing4");
+    }, 5000);
+
+    // Cleanup the timer if the component unmounts before 2 seconds
+    return () => clearTimeout(timer);
+  }, [navigate]);
+
   return (
     <StyledContainer>
-      <StyledImage src={dp1} alt="" />
+      <StyledImage src={dp3_1} alt="" />
       <StyledButton>
         <Link to="/">
           <StyledButtonBack>Back</StyledButtonBack>
         </Link>
       </StyledButton>
       <StyledButtons>
-        <Link to="/documentProcessing2">
-          <StyledButton1>Input Reference No.</StyledButton1>
-        </Link>
-        <Link to="/documentProcessing3">
-          <StyledButton2>Scan QR Code</StyledButton2>
+        <Link to="/documentProcessing1">
+          <StyledButton1>Cancel</StyledButton1>
         </Link>
       </StyledButtons>
     </StyledContainer>
@@ -65,6 +73,7 @@ const StyledButtonBack = styled.button`
   /* top: 0;
   left: 0%; */
   /* border-radius: 30px; */
+  opacity: 0;
 `;
 
 const StyledButtons = styled.div`
@@ -73,27 +82,18 @@ const StyledButtons = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 41.5%; //Adjust as needed
+  top: 68%; //Adjust as needed
   left: 50%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
 `;
 
 const StyledButton1 = styled.button`
-  padding: 105px 400px;
+  padding: 50px 320px;
   font-size: 16px;
   cursor: pointer;
   z-index: 1;
   background-color: #3f51b549;
-  border-radius: 30px;
-`;
-
-const StyledButton2 = styled.button`
-  margin-top: 43px;
-  padding: 115px 400px;
-  font-size: 16px;
-  cursor: pointer;
-  z-index: 1;
-  background-color: #3f51b549;
-  border-radius: 30px;
+  /* border-radius: 30px; */
+  opacity: 0;
 `;

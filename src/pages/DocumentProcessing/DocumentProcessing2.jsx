@@ -6,20 +6,23 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 // ASSETS
-import dp7 from "../assets/images/documentProcessing/dp7.png";
+import dp2_2 from "../../assets/images/documentProcessing/dp2-2.png";
 
-export default function DocumentProcessing7() {
+export default function DocumentProcessing2() {
   return (
     <StyledContainer>
-      <StyledImage src={dp7} alt="" />
+      <StyledImage src={dp2_2} alt="" />
       <StyledButton>
         <Link to="/">
           <StyledButtonBack>Back</StyledButtonBack>
         </Link>
       </StyledButton>
       <StyledButtons>
-        <Link to="/">
-          <StyledButton1>Return to Home</StyledButton1>
+        <Link to="/documentProcessing6">
+          <StyledButton1>Submit</StyledButton1>
+        </Link>
+        <Link to="/documentProcessing1">
+          <StyledButton2>Cancel</StyledButton2>
         </Link>
       </StyledButtons>
     </StyledContainer>
@@ -62,6 +65,7 @@ const StyledButtonBack = styled.button`
   /* top: 0;
   left: 0%; */
   /* border-radius: 30px; */
+  opacity: 0;
 `;
 
 const StyledButtons = styled.div`
@@ -70,27 +74,29 @@ const StyledButtons = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 92.5%; //Adjust as needed
+  top: 66.5%; //Adjust as needed
   left: 50%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
 `;
 
 const StyledButton1 = styled.button`
-  padding: 32px 320px;
+  padding: 50px 320px;
   font-size: 16px;
   cursor: pointer;
   z-index: 1;
   background-color: #3f51b549;
   /* border-radius: 30px; */
+  opacity: 0;
 `;
 
 const StyledButton2 = styled.button`
   margin-top: 43px;
-  padding: 115px 400px;
+  padding: 50px 320px;
   font-size: 16px;
   cursor: pointer;
   z-index: 1;
   background-color: #3f51b549;
-  border-radius: 30px;
+  opacity: 0;
+  /* border-radius: 30px; */
 `;
