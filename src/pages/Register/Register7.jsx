@@ -10,7 +10,9 @@ import register7 from "../../assets/images/registration/register7.png";
 export default function Register7() {
   return (
     <div>
-      <img src={register7} alt="Register 7" />
+      <Img>
+        <img src={register7} alt="Register 7" />
+      </Img>
 
       <Link to="/">
         <ReturnButton></ReturnButton>
@@ -22,6 +24,11 @@ export default function Register7() {
     </div>
   );
 }
+
+const Img = styled.img`
+  width: 100%;
+  height: auto;
+`;
 
 const ReturnButton = styled.button`
   position: absolute;
