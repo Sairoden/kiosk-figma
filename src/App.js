@@ -1,17 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  const figmaPrototypeUrl =
-    "https://www.figma.com/proto/KIq4dbLHt4eiWEmnZZVxBd/Kiosk213213-(Community)?node-id=0-1&t=we0zmgRJUateEwHo-1"; // Your Figma prototype link
-
   return (
-    <div style={{ width: "100%", height: "100vh" }}>
+    <div style={{ height: "100vh", width: "100vw", margin: 0 }}>
       <iframe
-        src={figmaPrototypeUrl}
-        style={{ width: "100%", height: "100%", border: "none" }}
         title="Figma Prototype"
-      />
+        style={{ border: "none", width: "100%", height: "100%" }}
+        src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/qCpgAKcZWWrdPHRuUOHs1s/FNCC-VMS?node-id=355-2055&t=FmOR0nT6VwMZUaP9-1&scaling=contain"
+        allowFullScreen
+      ></iframe>
     </div>
   );
 }
