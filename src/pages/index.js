@@ -1,4 +1,5 @@
 export { default as LandingPage } from "./LandingPage.jsx";
+export { default as Layout } from "./Layout.jsx";
 
 // DOCUMENT PROCESSING
 export { default as DocumentProcessing1 } from "./DocumentProcessing1.jsx";
