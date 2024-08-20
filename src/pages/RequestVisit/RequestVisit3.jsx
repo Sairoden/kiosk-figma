@@ -26,9 +26,9 @@ const Img = styled.img`
 
 const HiddenButton = styled.button`
   width: 40%;
-  height: 20%;
+  height: 10%;
   position: absolute; /* Position it absolutely */
-  top: 260%;
+  top: 180%;
   left: 50%;
   right: 0%;
   opacity: 0;
@@ -36,8 +36,8 @@ const HiddenButton = styled.button`
 
 const BackButton = styled.button`
   width: 40%;
-  height: 20%; /* Make it half the height of the container */
-  top: 260%; /* Space between buttons */
+  height: 10%; /* Make it half the height of the container */
+  top: 180%; /* Space between buttons */
   left: 10%;
   position: absolute; /* Position relative to the container */
   opacity: 0;
