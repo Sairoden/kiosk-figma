@@ -27,3 +27,6 @@ export { default as RequestVisit3 } from "./RequestVisit/RequestVisit3.jsx";
 export { default as RequestVisit4 } from "./RequestVisit/RequestVisit4.jsx";
 export { default as RequestVisit5 } from "./RequestVisit/RequestVisit5.jsx";
 export { default as RequestVisit6 } from "./RequestVisit/RequestVisit6.jsx";
+export { default as RequestVisit7 } from "./RequestVisit/RequestVisit7.jsx";
+export { default as RequestVisit8 } from "./RequestVisit/RequestVisit8.jsx";
+export { default as RequestVisit9 } from "./RequestVisit/RequestVisit9.jsx";
