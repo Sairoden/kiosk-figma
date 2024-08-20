@@ -8,18 +8,20 @@ import styled from "styled-components";
 // ASSETS
 import dp1 from "../assets/images/documentProcessing/dp1-1.png";
 
-export default function YourComponent() {
+export default function DocumentProcessing1() {
   return (
     <StyledContainer>
       <StyledImage src={dp1} alt="Homepage" />
-      <Link to="/firstPage">
-        <StyledButtons>
+      <StyledButtons>
+        <Link to="/documentProcessing2">
           <StyledButton1>Yes, I have submitted them online.</StyledButton1>
+        </Link>
+        <Link to="/documentProcessing1">
           <StyledButton2>
             No, please let me know the instructions.
           </StyledButton2>
-        </StyledButtons>
-      </Link>
+        </Link>
+      </StyledButtons>
     </StyledContainer>
   );
 }
