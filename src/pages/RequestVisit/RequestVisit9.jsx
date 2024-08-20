@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import visit9 from "../../assets/images/requestToVisit/visit3-1.png";
+import visit9 from "../../assets/images/requestToVisit/Face ID Scan3.gif";
 
 export default function RequestVisit9() {
   return (
