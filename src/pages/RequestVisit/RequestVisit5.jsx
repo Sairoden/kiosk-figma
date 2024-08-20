@@ -25,9 +25,9 @@ const Img = styled.img`
 
 const NextButton = styled.button`
   width: 40%;
-  height: 20%;
+  height: 10%;
   position: absolute; /* Position it absolutely */
-  top: 120%;
+  top: 84%;
   left: 50%;
   right: 0%;
   opacity: 0;
@@ -35,8 +35,8 @@ const NextButton = styled.button`
 
 const BackButton = styled.button`
   width: 40%;
-  height: 20%; /* Make it half the height of the container */
-  top: 120%; /* Space between buttons */
+  height: 10%; /* Make it half the height of the container */
+  top: 84%; /* Space between buttons */
   left: 10%;
   position: absolute; /* Position relative to the container */
   opacity: 0;

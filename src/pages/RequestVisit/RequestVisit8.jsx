@@ -11,7 +11,7 @@ export default function RequestVisit8() {
         <Img src={visit2} alt="visit1" />
         <NextButton>fingerprint</NextButton>
       </Link>
-      <Link to="/">
+      <Link to="/requestVisit1">
         <BackButton>back</BackButton>
       </Link>
     </div>
@@ -35,8 +35,8 @@ const NextButton = styled.button`
 
 const BackButton = styled.button`
   width: 70%;
-  height: 20%; /* Make it half the height of the container */
-  top: 130%; /* Space between buttons */
+  height: 10%; /* Make it half the height of the container */
+  top: 95%; /* Space between buttons */
   left: 15%;
   position: absolute; /* Position relative to the container */
   opacity: 0;
