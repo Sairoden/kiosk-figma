@@ -9,7 +9,6 @@ export { default as DocumentProcessing4 } from "./DocumentProcessing4.jsx";
 export { default as DocumentProcessing5 } from "./DocumentProcessing5.jsx";
 export { default as DocumentProcessing6 } from "./DocumentProcessing6.jsx";
 export { default as DocumentProcessing7 } from "./DocumentProcessing7.jsx";
-export { default as DocumentProcessing8 } from "./DocumentProcessing8.jsx";
 export { default as SecondPage } from "./SecondPage.jsx";
 
 // REGISTER
