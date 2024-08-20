@@ -12,7 +12,6 @@ import {
   DocumentProcessing5,
   DocumentProcessing6,
   DocumentProcessing7,
-  DocumentProcessing8,
 
   // REGISTRATION
   Register1,
@@ -88,11 +87,6 @@ function App() {
             <Route
               path="/documentProcessing7"
               element={<DocumentProcessing7 />}
-            />
-
-            <Route
-              path="/documentProcessing8"
-              element={<DocumentProcessing8 />}
             />
           </Route>
         </Routes>
