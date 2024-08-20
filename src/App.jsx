@@ -2,7 +2,7 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 
 // PAGES
-import { LandingPage, FirstPage, SecondPage } from "./pages";
+import { LandingPage, DocumentProcessing, SecondPage } from "./pages";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <HashRouter>
         <Routes>
           <Route path="/" index element={<LandingPage />} />
-          <Route path="/firstPage" element={<FirstPage />} />
+          <Route path="/documentProcessing" element={<DocumentProcessing />} />
           <Route path="/secondPage" element={<SecondPage />} />
         </Routes>
       </HashRouter>

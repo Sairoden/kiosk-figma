@@ -6,18 +6,18 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 // ASSETS
-import homepage from "../assets/images/Kiosk Homepage.png";
+import dp1 from "../assets/images/documentProcessing/dp1-1.png";
 
 export default function YourComponent() {
   return (
     <StyledContainer>
-      <StyledImage src={homepage} alt="Homepage" />
-      <Link to="/documentProcessing">
+      <StyledImage src={dp1} alt="Homepage" />
+      <Link to="/firstPage">
         <StyledButtons>
-          <StyledButton1>Registration Registration</StyledButton1>
-          <StyledButton2>Document Processing</StyledButton2>
-          <StyledButton3>Payment Payment</StyledButton3>
-          <StyledButton4>Request to Visit</StyledButton4>
+          <StyledButton1>Yes, I have submitted them online.</StyledButton1>
+          <StyledButton2>
+            No, please let me know the instructions.
+          </StyledButton2>
         </StyledButtons>
       </Link>
     </StyledContainer>
@@ -46,47 +46,27 @@ const StyledButtons = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 56%; //Adjust as needed
+  top: 51%; //Adjust as needed
   left: 50%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
 `;
 
 const StyledButton1 = styled.button`
-  padding: 115px 400px;
+  padding: 30px 400px;
   font-size: 16px;
   cursor: pointer;
   z-index: 1;
   background-color: #3f51b549;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 `;
 
 const StyledButton2 = styled.button`
   margin-top: 43px;
-  padding: 115px 400px;
+  padding: 30px 400px;
   font-size: 16px;
   cursor: pointer;
   z-index: 1;
   background-color: #3f51b549;
-  border-radius: 30px;
-`;
-
-const StyledButton3 = styled.button`
-  margin-top: 43px;
-  padding: 115px 400px;
-  font-size: 16px;
-  cursor: pointer;
-  z-index: 1;
-  background-color: #3f51b549;
-  border-radius: 30px;
-`;
-
-const StyledButton4 = styled.button`
-  margin-top: 43px;
-  padding: 115px 400px;
-  font-size: 16px;
-  cursor: pointer;
-  z-index: 1;
-  background-color: #3f51b549;
-  border-radius: 30px;
+  /* border-radius: 30px; */
 `;
