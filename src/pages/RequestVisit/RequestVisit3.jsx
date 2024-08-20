@@ -24,7 +24,7 @@ export default function RequestVisit3() {
 
 const Img = styled.img`
   width: 100%;
-  height: 100%;
+  height: auto;
 `;
 
 const HiddenButton = styled.button`

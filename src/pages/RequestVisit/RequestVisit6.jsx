@@ -17,7 +17,7 @@ export default function RequestVisit6() {
 
 const Img = styled.img`
   width: 100%;
-  height: 100%;
+  height: auto;
 `;
 
 const BackButton = styled.button`

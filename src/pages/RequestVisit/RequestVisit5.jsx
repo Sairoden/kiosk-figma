@@ -23,7 +23,7 @@ export default function RequestVisit5() {
 
 const Img = styled.img`
   width: 100%;
-  height: 100%;
+  height: auto;
 `;
 
 const NextButton = styled.button`

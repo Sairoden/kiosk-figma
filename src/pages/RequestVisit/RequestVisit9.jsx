@@ -32,7 +32,7 @@ export default function RequestVisit9() {
 
 const Img = styled.img`
   width: 100%;
-  height: 100%; /* Maintain aspect ratio */
+  height: auto; /* Maintain aspect ratio */
 `;
 
 const NextButton = styled.button`

@@ -30,7 +30,7 @@ export default function RequestVisit4() {
 
 const Img = styled.img`
   width: 100%;
-  height: 100%;
+  height: auto;
 `;
 
 const NextButton = styled.button`
