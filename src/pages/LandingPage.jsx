@@ -12,12 +12,16 @@ export default function YourComponent() {
     <StyledContainer>
       <StyledImage src={homepage} alt="Homepage" />
       <StyledButtons>
-        <StyledButton1>Registration Registration</StyledButton1>
+        <Link to="/register1">
+          <StyledButton1>Registration Registration</StyledButton1>
+        </Link>
         <Link to="/documentProcessing1">
           <StyledButton2>Document Processing</StyledButton2>
         </Link>
         <StyledButton3>Payment Payment</StyledButton3>
-        <StyledButton4>Request to Visit</StyledButton4>
+        <Link to="/requestVisit1">
+          <StyledButton4>Request to Visit</StyledButton4>
+        </Link>
       </StyledButtons>
     </StyledContainer>
   );
