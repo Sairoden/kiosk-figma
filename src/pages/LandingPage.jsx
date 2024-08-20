@@ -12,12 +12,16 @@ export default function YourComponent() {
     <StyledContainer>
       <StyledImage src={homepage} alt="Homepage" />
       <StyledButtons>
-        <StyledButton1>Registration Registration</StyledButton1>
+        <Link to="/register1">
+          <StyledButton1>Registration Registration</StyledButton1>
+        </Link>
         <Link to="/documentProcessing1">
           <StyledButton2>Document Processing</StyledButton2>
         </Link>
         <StyledButton3>Payment Payment</StyledButton3>
-        <StyledButton4>Request to Visit</StyledButton4>
+        <Link to="/requestVisit1">
+          <StyledButton4>Request to Visit</StyledButton4>
+        </Link>
       </StyledButtons>
     </StyledContainer>
   );
@@ -58,6 +62,7 @@ const StyledButton1 = styled.button`
   z-index: 1;
   background-color: #3f51b549;
   border-radius: 30px;
+  opacity: 0;
 `;
 
 const StyledButton2 = styled.button`
@@ -68,6 +73,7 @@ const StyledButton2 = styled.button`
   z-index: 1;
   background-color: #3f51b549;
   border-radius: 30px;
+  opacity: 0;
 `;
 
 const StyledButton3 = styled.button`
@@ -78,6 +84,7 @@ const StyledButton3 = styled.button`
   z-index: 1;
   background-color: #3f51b549;
   border-radius: 30px;
+  opacity: 0;
 `;
 
 const StyledButton4 = styled.button`
@@ -88,4 +95,5 @@ const StyledButton4 = styled.button`
   z-index: 1;
   background-color: #3f51b549;
   border-radius: 30px;
+  opacity: 0;
 `;

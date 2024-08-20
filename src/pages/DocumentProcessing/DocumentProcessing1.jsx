@@ -6,20 +6,23 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 // ASSETS
-import dp7 from "../assets/images/documentProcessing/dp7.png";
+import dp1 from "../../assets/images/documentProcessing/dp1.png";
 
-export default function DocumentProcessing7() {
+export default function DocumentProcessing1() {
   return (
     <StyledContainer>
-      <StyledImage src={dp7} alt="" />
+      <StyledImage src={dp1} alt="" />
       <StyledButton>
         <Link to="/">
           <StyledButtonBack>Back</StyledButtonBack>
         </Link>
       </StyledButton>
       <StyledButtons>
-        <Link to="/">
-          <StyledButton1>Return to Home</StyledButton1>
+        <Link to="/documentProcessing2">
+          <StyledButton1>Input Reference No.</StyledButton1>
+        </Link>
+        <Link to="/documentProcessing3">
+          <StyledButton2>Scan QR Code</StyledButton2>
         </Link>
       </StyledButtons>
     </StyledContainer>
@@ -58,6 +61,7 @@ const StyledButtonBack = styled.button`
   font-size: 16px;
   cursor: pointer;
   z-index: 1;
+  opacity: 0;
   background-color: #3f51b549;
   /* top: 0;
   left: 0%; */
@@ -70,19 +74,20 @@ const StyledButtons = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 92.5%; //Adjust as needed
+  top: 41.5%; //Adjust as needed
   left: 50%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
 `;
 
 const StyledButton1 = styled.button`
-  padding: 32px 320px;
+  padding: 105px 400px;
   font-size: 16px;
   cursor: pointer;
   z-index: 1;
   background-color: #3f51b549;
-  /* border-radius: 30px; */
+  border-radius: 30px;
+  opacity: 0;
 `;
 
 const StyledButton2 = styled.button`
@@ -93,4 +98,5 @@ const StyledButton2 = styled.button`
   z-index: 1;
   background-color: #3f51b549;
   border-radius: 30px;
+  opacity: 0;
 `;
