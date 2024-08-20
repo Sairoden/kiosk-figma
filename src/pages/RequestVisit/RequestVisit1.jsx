@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import visit1 from "../../assets/images/requestToVisit/Visit1.png";
+import visit1 from "../../assets/images/requestToVisit/visit1.png";
 
 export default function RequestVisit1() {
   return (
