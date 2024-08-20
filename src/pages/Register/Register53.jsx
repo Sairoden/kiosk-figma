@@ -9,8 +9,8 @@ import register53 from "../../assets/images/registration/register5-3.png";
 
 export default function Register53() {
   return (
-    <div>
-      <img src={register53} alt="Register 5" />
+    <StyledContainer>
+      <Img src={register53} alt="Register 5" />
 
       <Link to="/">
         <ReturnButton></ReturnButton>
@@ -23,9 +23,23 @@ export default function Register53() {
       <Link to="/register6">
         <NextButton></NextButton>
       </Link>
-    </div>
+    </StyledContainer>
   );
 }
+
+const StyledContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+`;
+
+const Img = styled.img`
+  width: 100%;
+  height: auto;
+`;
 
 const NextButton = styled.button`
   position: absolute;

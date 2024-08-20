@@ -9,7 +9,7 @@ import register7 from "../../assets/images/registration/register7.png";
 
 export default function Register7() {
   return (
-    <div>
+    <StyledContainer>
       <Img src={register7} alt="Register 7" />
 
       <Link to="/">
@@ -19,9 +19,18 @@ export default function Register7() {
       <Link to="/">
         <HomeButton></HomeButton>
       </Link>
-    </div>
+    </StyledContainer>
   );
 }
+
+const StyledContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+`;
 
 const Img = styled.img`
   width: 100%;

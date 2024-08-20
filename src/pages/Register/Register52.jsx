@@ -9,17 +9,24 @@ import register52 from "../../assets/images/registration/register5-2.png";
 
 export default function Register52() {
   return (
-    <div>
-      <Img>
-        <img src={register52} alt="Register 5" />
-      </Img>
+    <StyledContainer>
+      <Img src={register52} alt="Register 5" />
       <Link to="/register4-1">
         <NextButton></NextButton>
       </Link>
       *
-    </div>
+    </StyledContainer>
   );
 }
+
+const StyledContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+`;
 
 const Img = styled.img`
   width: 100%;
