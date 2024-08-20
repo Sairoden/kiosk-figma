@@ -9,7 +9,7 @@ export default function RequestVisit1() {
         <Img src={visit1} alt="visit1" />
         <NextButton>FaceScan</NextButton>
       </Link>
-      <Link to="/requestvisit9">
+      <Link to="/">
         <BackButton>Back button</BackButton>
       </Link>
     </div>
@@ -33,8 +33,8 @@ const NextButton = styled.button`
 
 const BackButton = styled.button`
   width: 70%;
-  height: 40%; /* Make it half the height of the container */
-  top: 130%; /* Space between buttons */
+  height: 10%; /* Make it half the height of the container */
+  top: 180%; /* Space between buttons */
   left: 15%;
   position: absolute; /* Position relative to the container */
   opacity: 0;
