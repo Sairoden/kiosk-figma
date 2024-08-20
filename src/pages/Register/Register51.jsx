@@ -10,7 +10,9 @@ import register51 from "../../assets/images/registration/register5-1.png";
 export default function Register51() {
   return (
     <div>
-      <img src={register51} alt="Register 5" />
+      <Img>
+        <img src={register51} alt="Register 5" />
+      </Img>
       <Link to="/register4-3">
         <NextButton></NextButton>
       </Link>
@@ -21,6 +23,11 @@ export default function Register51() {
     </div>
   );
 }
+
+const Img = styled.img`
+  width: 100%;
+  height: auto;
+`;
 
 const NextButton = styled.button`
   position: absolute;
