@@ -16,25 +16,37 @@ export default function Register6() {
         <ReturnButton></ReturnButton>
       </Link>
 
-      <Link to="/">
-        <HomeButton></HomeButton>
+      <Link to="/register5-3">
+        <PrevButton></PrevButton>
+      </Link>
+
+      <Link to="/register7">
+        <NextButton></NextButton>
       </Link>
     </div>
   );
 }
 
+const NextButton = styled.button`
+  position: absolute;
+  bottom: -33rem;
+  right: 20rem;
+  padding: 5rem 13rem;
+  opacity: 0;
+`;
+
 const ReturnButton = styled.button`
   position: absolute;
   top: 3rem;
-  left: 5rem;
+  left: 12rem;
   padding: 4rem 15rem;
   opacity: 0;
 `;
 
-const HomeButton = styled.button`
+const PrevButton = styled.button`
   position: absolute;
-  bottom: -20rem;
-  left: 12rem;
-  padding: 5rem 25rem;
+  bottom: -33rem;
+  left: 20rem;
+  padding: 5rem 13rem;
   opacity: 0;
 `;

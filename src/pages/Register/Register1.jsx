@@ -32,8 +32,7 @@ const ReturnButton = styled.button`
   top: 3rem;
   left: 12rem;
   padding: 4rem 15rem;
-  /* opacity: 0; */
-  background-color: red;
+  opacity: 0;
 `;
 
 const PrevButton = styled.button`
@@ -41,8 +40,7 @@ const PrevButton = styled.button`
   bottom: -72rem;
   left: 20rem;
   padding: 5rem 13rem;
-  /* opacity: 0; */
-  background-color: red;
+  opacity: 0;
 `;
 
 const NextButton = styled.button`
@@ -50,6 +48,5 @@ const NextButton = styled.button`
   bottom: -72rem;
   right: 20rem;
   padding: 5rem 13rem;
-  /* opacity: 0; */
-  background-color: red;
+  opacity: 0;
 `;

@@ -14,10 +14,17 @@ export { default as SecondPage } from "./SecondPage.jsx";
 // REGISTER
 export { default as Register1 } from "./Register/Register1.jsx";
 export { default as Register2 } from "./Register/Register2.jsx";
-export { default as Register3 } from "./Register/Register3.jsx";
-export { default as Register4 } from "./Register/Register4.jsx";
-export { default as Register5 } from "./Register/Register5.jsx";
+export { default as Register31 } from "./Register/Register31.jsx";
+export { default as Register32 } from "./Register/Register32.jsx";
+export { default as Register33 } from "./Register/Register33.jsx";
+export { default as Register41 } from "./Register/Register41.jsx";
+export { default as Register42 } from "./Register/Register42.jsx";
+export { default as Register43 } from "./Register/Register43.jsx";
+export { default as Register51 } from "./Register/Register51.jsx";
+export { default as Register52 } from "./Register/Register52.jsx";
+export { default as Register53 } from "./Register/Register53.jsx";
 export { default as Register6 } from "./Register/Register6.jsx";
+export { default as Register7 } from "./Register/Register7.jsx";
 
 // REQUEST VISIT
 export { default as RequestVisit1 } from "./RequestVisit/RequestVisit1.jsx";

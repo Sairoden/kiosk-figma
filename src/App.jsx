@@ -16,10 +16,17 @@ import {
   // REGISTRATION
   Register1,
   Register2,
-  Register3,
-  Register4,
-  Register5,
+  Register31,
+  Register32,
+  Register33,
+  Register41,
+  Register42,
+  Register43,
+  Register51,
+  Register52,
+  Register53,
   Register6,
+  Register7,
 
   // REQUEST TO VISIT
   RequestVisit1,
@@ -44,10 +51,17 @@ function App() {
             {/* RERGISTRATION */}
             <Route path="/register1" element={<Register1 />} />
             <Route path="/register2" element={<Register2 />} />
-            <Route path="/register3" element={<Register3 />} />
-            <Route path="/register4" element={<Register4 />} />
-            <Route path="/register5" element={<Register5 />} />
+            <Route path="/register3-1" element={<Register31 />} />
+            <Route path="/register3-2" element={<Register32 />} />
+            <Route path="/register3-3" element={<Register33 />} />
+            <Route path="/register4-1" element={<Register41 />} />
+            <Route path="/register4-2" element={<Register42 />} />
+            <Route path="/register4-3" element={<Register43 />} />
+            <Route path="/register5-1" element={<Register51 />} />
+            <Route path="/register5-2" element={<Register52 />} />
+            <Route path="/register5-3" element={<Register53 />} />
             <Route path="/register6" element={<Register6 />} />
+            <Route path="/register7" element={<Register7 />} />
 
             {/* REQUEST TO VISIT */}
             <Route path="/requestVisit1" element={<RequestVisit1 />} />
