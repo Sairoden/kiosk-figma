@@ -1,28 +1,36 @@
 // REACT
-// import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { useNavigate, Link } from "react-router-dom";
 
 // STYLES
 import styled from "styled-components";
 
 // ASSETS
-import dp2_2 from "../assets/images/documentProcessing/dp2-2.png";
+import dp5 from "../../assets/images/documentProcessing/dp5.1.gif";
 
-export default function DocumentProcessing2() {
+export default function DocumentProcessing5() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigate("/documentProcessing7");
+    }, 5000);
+
+    // Cleanup the timer if the component unmounts before 2 seconds
+    return () => clearTimeout(timer);
+  }, [navigate]);
+
   return (
     <StyledContainer>
-      <StyledImage src={dp2_2} alt="" />
+      <StyledImage src={dp5} alt="" />
       <StyledButton>
         <Link to="/">
           <StyledButtonBack>Back</StyledButtonBack>
         </Link>
       </StyledButton>
       <StyledButtons>
-        <Link to="/documentProcessing5">
-          <StyledButton1>Submit</StyledButton1>
-        </Link>
-        <Link to="/documentProcessing1">
-          <StyledButton2>Cancel</StyledButton2>
+        <Link to="/documentProcessing6">
+          <StyledButton1>Cancel</StyledButton1>
         </Link>
       </StyledButtons>
     </StyledContainer>
@@ -65,6 +73,7 @@ const StyledButtonBack = styled.button`
   /* top: 0;
   left: 0%; */
   /* border-radius: 30px; */
+  opacity: 0;
 `;
 
 const StyledButtons = styled.div`
@@ -73,7 +82,7 @@ const StyledButtons = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 66.5%; //Adjust as needed
+  top: 68%; //Adjust as needed
   left: 50%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
@@ -86,14 +95,5 @@ const StyledButton1 = styled.button`
   z-index: 1;
   background-color: #3f51b549;
   /* border-radius: 30px; */
-`;
-
-const StyledButton2 = styled.button`
-  margin-top: 43px;
-  padding: 50px 320px;
-  font-size: 16px;
-  cursor: pointer;
-  z-index: 1;
-  background-color: #3f51b549;
-  /* border-radius: 30px; */
+  opacity: 0;
 `;

@@ -2,13 +2,13 @@ export { default as LandingPage } from "./LandingPage.jsx";
 export { default as Layout } from "./Layout.jsx";
 
 // DOCUMENT PROCESSING
-export { default as DocumentProcessing1 } from "./DocumentProcessing1.jsx";
-export { default as DocumentProcessing2 } from "./DocumentProcessing2.jsx";
-export { default as DocumentProcessing3 } from "./DocumentProcessing3.jsx";
-export { default as DocumentProcessing4 } from "./DocumentProcessing4.jsx";
-export { default as DocumentProcessing5 } from "./DocumentProcessing5.jsx";
-export { default as DocumentProcessing6 } from "./DocumentProcessing6.jsx";
-export { default as DocumentProcessing7 } from "./DocumentProcessing7.jsx";
+export { default as DocumentProcessing1 } from "./DocumentProcessing/DocumentProcessing1.jsx";
+export { default as DocumentProcessing2 } from "./DocumentProcessing/DocumentProcessing2.jsx";
+export { default as DocumentProcessing3 } from "./DocumentProcessing/DocumentProcessing3.jsx";
+export { default as DocumentProcessing4 } from "./DocumentProcessing/DocumentProcessing4.jsx";
+export { default as DocumentProcessing5 } from "./DocumentProcessing/DocumentProcessing5.jsx";
+export { default as DocumentProcessing6 } from "./DocumentProcessing/DocumentProcessing6.jsx";
+export { default as DocumentProcessing7 } from "./DocumentProcessing/DocumentProcessing7.jsx";
 export { default as SecondPage } from "./SecondPage.jsx";
 
 // REGISTER

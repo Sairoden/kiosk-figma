@@ -58,6 +58,7 @@ const StyledButton1 = styled.button`
   z-index: 1;
   background-color: #3f51b549;
   border-radius: 30px;
+  opacity: 0;
 `;
 
 const StyledButton2 = styled.button`
@@ -68,6 +69,7 @@ const StyledButton2 = styled.button`
   z-index: 1;
   background-color: #3f51b549;
   border-radius: 30px;
+  opacity: 0;
 `;
 
 const StyledButton3 = styled.button`
@@ -78,6 +80,7 @@ const StyledButton3 = styled.button`
   z-index: 1;
   background-color: #3f51b549;
   border-radius: 30px;
+  opacity: 0;
 `;
 
 const StyledButton4 = styled.button`
@@ -88,4 +91,5 @@ const StyledButton4 = styled.button`
   z-index: 1;
   background-color: #3f51b549;
   border-radius: 30px;
+  opacity: 0;
 `;
