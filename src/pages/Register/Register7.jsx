@@ -42,7 +42,7 @@ const HomeButton = styled.button`
   bottom: 280px;
   left: 150px;
   padding: 5rem 24rem;
-  background: red;
+  opacity: 0;
 `;
 
 const ReturnButton = styled.button`
@@ -50,5 +50,5 @@ const ReturnButton = styled.button`
   top: 30px;
   left: 60px;
   padding: 4rem 15rem;
-  background: red;
+  opacity: 0;
 `;

@@ -43,7 +43,7 @@ const FingerButton = styled.button`
   top: 850px;
   left: 200px;
   padding: 18rem 19rem;
-  background: red;
+  opacity: 0;
 `;
 
 const BackButton = styled.button`
@@ -51,7 +51,7 @@ const BackButton = styled.button`
   bottom: 120px;
   left: 80px;
   padding: 4rem 12rem;
-  background: red;
+  opacity: 0;
 `;
 
 const ReturnButton = styled.button`
@@ -59,6 +59,6 @@ const ReturnButton = styled.button`
   top: 60px;
   left: 80px;
   padding: 4rem 12rem;
-  background: red;
+  opacity: 0;
   /* opacity: 0; */
 `;

@@ -42,7 +42,7 @@ const CancelButton = styled.button`
   bottom: 220px;
   right: 125px;
   padding: 4rem 22rem;
-  background: red;
+  opacity: 0;
 `;
 
 const PhotoButton = styled.button`
@@ -50,5 +50,5 @@ const PhotoButton = styled.button`
   bottom: 380px;
   right: 125px;
   padding: 4rem 22rem;
-  background: red;
+  opacity: 0;
 `;

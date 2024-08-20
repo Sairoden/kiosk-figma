@@ -45,7 +45,7 @@ const NextButton = styled.button`
   bottom: 130px;
   left: 550px;
   padding: 4rem 10rem;
-  background: red;
+  opacity: 0;
 `;
 
 const BackButton = styled.button`
@@ -53,7 +53,7 @@ const BackButton = styled.button`
   bottom: 130px;
   left: 100px;
   padding: 4rem 10rem;
-  background: red;
+  opacity: 0;
 `;
 
 const ReturnButton = styled.button`
@@ -61,6 +61,6 @@ const ReturnButton = styled.button`
   top: 60px;
   left: 80px;
   padding: 4rem 12rem;
-  background: red;
+  opacity: 0;
   /* opacity: 0; */
 `;

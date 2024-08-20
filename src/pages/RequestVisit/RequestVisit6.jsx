@@ -40,7 +40,7 @@ const HomeButton = styled.button`
   bottom: 60px;
   left: 180px;
   padding: 4rem 20rem;
-  background: red;
+  opacity: 0;
 `;
 
 const ReturnButton = styled.button`
@@ -48,6 +48,6 @@ const ReturnButton = styled.button`
   top: 60px;
   left: 80px;
   padding: 4rem 12rem;
-  background: red;
+  opacity: 0;
   /* opacity: 0; */
 `;
