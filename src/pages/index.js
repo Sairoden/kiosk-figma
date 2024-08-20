@@ -1,6 +1,12 @@
 export { default as LandingPage } from "./LandingPage.jsx";
 export { default as DocumentProcessing1 } from "./DocumentProcessing1.jsx";
 export { default as DocumentProcessing2 } from "./DocumentProcessing2.jsx";
+export { default as DocumentProcessing3 } from "./DocumentProcessing3.jsx";
+export { default as DocumentProcessing4 } from "./DocumentProcessing4.jsx";
+export { default as DocumentProcessing5 } from "./DocumentProcessing5.jsx";
+export { default as DocumentProcessing6 } from "./DocumentProcessing6.jsx";
+export { default as DocumentProcessing7 } from "./DocumentProcessing7.jsx";
+export { default as DocumentProcessing8 } from "./DocumentProcessing8.jsx";
 export { default as SecondPage } from "./SecondPage.jsx";
 export { default as Register1 } from "./Register1.jsx";
 export { default as Register4 } from "./Register4.jsx";

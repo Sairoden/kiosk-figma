@@ -6,7 +6,12 @@ import {
   LandingPage,
   DocumentProcessing1,
   DocumentProcessing2,
-  SecondPage,
+  DocumentProcessing3,
+  DocumentProcessing4,
+  DocumentProcessing5,
+  DocumentProcessing6,
+  DocumentProcessing7,
+  DocumentProcessing8,
 
   // REGISTRATION
   Register1,
@@ -46,7 +51,35 @@ function App() {
             element={<DocumentProcessing2 />}
           />
 
-          <Route path="/secondPage" element={<SecondPage />} />
+          <Route
+            path="/documentProcessing3"
+            element={<DocumentProcessing3 />}
+          />
+
+          <Route
+            path="/documentProcessing4"
+            element={<DocumentProcessing4 />}
+          />
+
+          <Route
+            path="/documentProcessing5"
+            element={<DocumentProcessing5 />}
+          />
+
+          <Route
+            path="/documentProcessing6"
+            element={<DocumentProcessing6 />}
+          />
+
+          <Route
+            path="/documentProcessing7"
+            element={<DocumentProcessing7 />}
+          />
+
+          <Route
+            path="/documentProcessing8"
+            element={<DocumentProcessing8 />}
+          />
         </Routes>
       </HashRouter>
     </>

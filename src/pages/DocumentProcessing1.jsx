@@ -6,20 +6,23 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 // ASSETS
-import dp1 from "../assets/images/documentProcessing/dp1-1.png";
+import dp1 from "../assets/images/documentProcessing/dp1.png";
 
 export default function DocumentProcessing1() {
   return (
     <StyledContainer>
-      <StyledImage src={dp1} alt="Homepage" />
+      <StyledImage src={dp1} alt="" />
+      <StyledButton>
+        <Link to="/">
+          <StyledButtonBack>Back</StyledButtonBack>
+        </Link>
+      </StyledButton>
       <StyledButtons>
         <Link to="/documentProcessing2">
-          <StyledButton1>Yes, I have submitted them online.</StyledButton1>
+          <StyledButton1>Input Reference No.</StyledButton1>
         </Link>
-        <Link to="/documentProcessing1">
-          <StyledButton2>
-            No, please let me know the instructions.
-          </StyledButton2>
+        <Link to="/documentProcessing3">
+          <StyledButton2>Scan QR Code</StyledButton2>
         </Link>
       </StyledButtons>
     </StyledContainer>
@@ -41,6 +44,28 @@ const StyledImage = styled.img`
   z-index: -1;
   box-sizing: border-box;
 `;
+const StyledButton = styled.div`
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  position: absolute;
+  top: 6%; //Adjust as needed
+  left: 11%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+`;
+
+const StyledButtonBack = styled.button`
+  padding: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1;
+  background-color: #3f51b549;
+  /* top: 0;
+  left: 0%; */
+  /* border-radius: 30px; */
+`;
 
 const StyledButtons = styled.div`
   display: flex;
@@ -48,27 +73,27 @@ const StyledButtons = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 51%; //Adjust as needed
+  top: 41.5%; //Adjust as needed
   left: 50%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
 `;
 
 const StyledButton1 = styled.button`
-  padding: 30px 400px;
+  padding: 105px 400px;
   font-size: 16px;
   cursor: pointer;
   z-index: 1;
   background-color: #3f51b549;
-  /* border-radius: 30px; */
+  border-radius: 30px;
 `;
 
 const StyledButton2 = styled.button`
   margin-top: 43px;
-  padding: 30px 400px;
+  padding: 115px 400px;
   font-size: 16px;
   cursor: pointer;
   z-index: 1;
   background-color: #3f51b549;
-  /* border-radius: 30px; */
+  border-radius: 30px;
 `;
