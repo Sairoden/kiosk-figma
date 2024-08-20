@@ -29,8 +29,8 @@ export default function Register53() {
 
 const NextButton = styled.button`
   position: absolute;
-  bottom: -185rem;
-  right: 20rem;
+  bottom: -150rem;
+  right: 5rem;
   padding: 5rem 13rem;
   opacity: 0;
 `;
@@ -38,15 +38,15 @@ const NextButton = styled.button`
 const ReturnButton = styled.button`
   position: absolute;
   top: 3rem;
-  left: 12rem;
+  left: 6rem;
   padding: 4rem 15rem;
   opacity: 0;
 `;
 
 const PrevButton = styled.button`
   position: absolute;
-  bottom: -185rem;
-  left: 20rem;
+  bottom: -150rem;
+  left: 9rem;
   padding: 5rem 13rem;
   opacity: 0;
 `;

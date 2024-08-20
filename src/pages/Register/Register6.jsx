@@ -29,8 +29,8 @@ export default function Register6() {
 
 const NextButton = styled.button`
   position: absolute;
-  bottom: -33rem;
-  right: 20rem;
+  bottom: 0rem;
+  right: 5rem;
   padding: 5rem 13rem;
   opacity: 0;
 `;
@@ -38,15 +38,15 @@ const NextButton = styled.button`
 const ReturnButton = styled.button`
   position: absolute;
   top: 3rem;
-  left: 12rem;
+  left: 2rem;
   padding: 4rem 15rem;
   opacity: 0;
 `;
 
 const PrevButton = styled.button`
   position: absolute;
-  bottom: -33rem;
-  left: 20rem;
+  bottom: 0rem;
+  left: 10rem;
   padding: 5rem 13rem;
   opacity: 0;
 `;

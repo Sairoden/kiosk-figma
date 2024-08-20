@@ -30,7 +30,7 @@ export default function Register33() {
 const FaceIDButton = styled.button`
   position: absolute;
   top: 120rem;
-  left: 25rem;
+  left: 15rem;
   padding: 18rem 23rem;
   opacity: 0;
 `;
@@ -38,15 +38,15 @@ const FaceIDButton = styled.button`
 const ReturnButton = styled.button`
   position: absolute;
   top: 3rem;
-  left: 12rem;
+  left: 5rem;
   padding: 4rem 15rem;
   opacity: 0;
 `;
 
 const PrevButton = styled.button`
   position: absolute;
-  bottom: -185rem;
-  left: 20rem;
+  bottom: -150rem;
+  left: 10rem;
   padding: 5rem 13rem;
   opacity: 0;
 `;

@@ -33,8 +33,8 @@ const ReturnButton = styled.button`
 
 const HomeButton = styled.button`
   position: absolute;
-  bottom: -55rem;
-  left: 23rem;
+  bottom: -20rem;
+  left: 10rem;
   padding: 5rem 25rem;
   opacity: 0;
 `;
