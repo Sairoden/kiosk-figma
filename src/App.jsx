@@ -17,6 +17,14 @@ import {
   Register4,
   Register5,
   Register6,
+
+  // REQUEST TO VISIT
+  RequestVisit1,
+  RequestVisit2,
+  RequestVisit3,
+  RequestVisit4,
+  RequestVisit5,
+  RequestVisit6,
 } from "./pages";
 
 function App() {
@@ -36,6 +44,13 @@ function App() {
           <Route path="/register5" element={<Register5 />} />
           <Route path="/register6" element={<Register6 />} />
 
+          {/* REQUEST TO VISIT */}
+          <Route path="/requestVisit1" element={<RequestVisit1 />} />
+          <Route path="/requestVisit2" element={<RequestVisit2 />} />
+          <Route path="/requestVisit3" element={<RequestVisit3 />} />
+          <Route path="/requestVisit4" element={<RequestVisit4 />} />
+          <Route path="/requestVisit5" element={<RequestVisit5 />} />
+          <Route path="/requestVisit6" element={<RequestVisit6 />} />
           {/* DOCUMENT PROCESSING */}
           <Route
             path="/documentProcessing1"
