@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
 import styled from "styled-components";
-import visit9 from "../../assets/images/requestToVisit/visit3-1.png";
+import visit9 from "../../assets/images/requestToVisit/Face ID Scan3.gif";
 
 export default function RequestVisit9() {
   const navigate = useNavigate();
