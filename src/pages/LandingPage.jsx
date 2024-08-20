@@ -8,9 +8,9 @@ export default function LandingPage() {
   return (
     <>
       Hello World{" "}
-      <button as={Link} to="/firstPage">
-        First Page
-      </button>
+      <Link to="/firstPage">
+        <button>First Page</button>
+      </Link>
     </>
   );
 }

@@ -8,9 +8,9 @@ export default function FirstPage() {
   return (
     <>
       First Page
-      <button as={Link} to="/secondPage">
-        Second Page
-      </button>
+      <Link to="/secondPage">
+        <button>Second Page</button>
+      </Link>
     </>
   );
 }

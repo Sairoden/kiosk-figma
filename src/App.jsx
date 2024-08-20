@@ -9,7 +9,7 @@ function App() {
     <>
       <HashRouter>
         <Routes>
-          <Route index element={<LandingPage />} />
+          <Route path="/" index element={<LandingPage />} />
           <Route path="/firstPage" element={<FirstPage />} />
           <Route path="/secondPage" element={<SecondPage />} />
         </Routes>
