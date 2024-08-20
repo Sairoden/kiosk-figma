@@ -51,6 +51,5 @@ const NextButton = styled.button`
   bottom: 500px;
   right: 125px;
   padding: 5rem 25rem;
-
   opacity: 0;
 `;

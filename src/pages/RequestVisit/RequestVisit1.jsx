@@ -4,69 +4,61 @@ import visit1 from "../../assets/images/requestToVisit/visit1.png";
 
 export default function RequestVisit1() {
   return (
-    <Container>
+    <StyledContainer>
+      <StyledImage src={visit1} alt="visit1" />
+
       <Link to="/requestVisit8">
-        <Img src={visit1} alt="visit1" />
-        <NextButton>FaceScan</NextButton>
-      </Link>
-      <Link to="/requestVisit9">
         <FingerButton>fingerprint</FingerButton>
       </Link>
+
       <Link to="/">
         <BackButton>Back button</BackButton>
       </Link>
+
       <Link to="/">
         <ReturnButton>Return button</ReturnButton>
       </Link>
-    </Container>
+    </StyledContainer>
   );
 }
 
-const Container = styled.div`
-  position: relative; /* Ensure absolute positioning works */
-  width: 100%;
-  height: 200vh; /* Full height for the container */
-  overflow: hidden; /* Prevent overflow */
+const StyledContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
 `;
 
-const Img = styled.img`
+const StyledImage = styled.img`
   width: 100%;
-  height: auto; /* Maintain aspect ratio */
+  height: auto;
+  z-index: -1;
+  box-sizing: border-box;
 `;
 
-const NextButton = styled.button`
-  width: 60%;
-  height: 20%;
-  position: absolute; /* Position it absolutely */
-  top: 65%;
-  left: 20%;
-  right: 0%;
-  opacity: 0;
-`;
 const FingerButton = styled.button`
-  width: 60%;
-  height: 20%;
-  position: absolute; /* Position it absolutely */
-  top: 35%;
-  left: 20%;
-  right: 0%;
-  opacity: 0;
+  position: absolute;
+  top: 850px;
+  left: 200px;
+  padding: 18rem 19rem;
+  background: red;
 `;
 
 const BackButton = styled.button`
-  width: 30%;
-  height: 10%; /* Make it half the height of the container */
-  top: 85%; /* Space between buttons */
-  left: 15%;
-  position: absolute; /* Position relative to the container */
-  opacity: 0;
+  position: absolute;
+  bottom: 120px;
+  left: 80px;
+  padding: 4rem 12rem;
+  background: red;
 `;
 
 const ReturnButton = styled.button`
-  width: 30%;
-  height: 10%; /* Make it half the height of the container */
-  top: 2%; /* Space between buttons */
-  left: 0%;
-  position: absolute; /* Position relative to the container */
-  opacity: 0;
+  position: absolute;
+  top: 60px;
+  left: 80px;
+  padding: 4rem 12rem;
+  background: red;
+  /* opacity: 0; */
 `;

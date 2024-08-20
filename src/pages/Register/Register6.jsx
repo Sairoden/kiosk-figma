@@ -13,15 +13,15 @@ export default function Register6() {
       <Img src={register6} alt="Register 6" />
 
       <Link to="/">
-        <ReturnButton></ReturnButton>
+        <ReturnButton>ReturnButton</ReturnButton>
       </Link>
 
       <Link to="/register5-3">
-        <PrevButton></PrevButton>
+        <PrevButton>PrevButton</PrevButton>
       </Link>
 
       <Link to="/register7">
-        <NextButton></NextButton>
+        <NextButton>NextButton</NextButton>
       </Link>
     </StyledContainer>
   );
@@ -43,24 +43,24 @@ const Img = styled.img`
 
 const NextButton = styled.button`
   position: absolute;
-  bottom: 0rem;
-  right: 5rem;
-  padding: 5rem 13rem;
-  opacity: 0;
+  bottom: 620px;
+  left: 580px;
+  padding: 5rem 11rem;
+  background: red;
 `;
 
 const ReturnButton = styled.button`
   position: absolute;
-  top: 3rem;
-  left: 2rem;
+  top: 30px;
+  left: 60px;
   padding: 4rem 15rem;
-  opacity: 0;
+  background: red;
 `;
 
 const PrevButton = styled.button`
   position: absolute;
-  bottom: 0rem;
-  left: 10rem;
-  padding: 5rem 13rem;
-  opacity: 0;
+  bottom: 620px;
+  left: 130px;
+  padding: 5rem 11rem;
+  background: red;
 `;

@@ -2,67 +2,64 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import visit4 from "../../assets/images/requestToVisit/visit4.png";
-import { useRef } from "react";
 
 export default function RequestVisit4() {
-  const buttonRef = useRef(null);
-  const handleImageClick = () => {
-    if (buttonRef.current) {
-      buttonRef.current.click(); // Trigger the button click
-    }
-  };
   return (
-    <Container>
-      {" "}
-      <Link to="/requestVisit5">
-        <Img src={visit4} alt="visit4" onClick={handleImageClick}></Img>
-        <NextButton ref={buttonRef}>Next Button</NextButton>
-      </Link>
-      <Link to="/requestVisit3">
-        <BackButton ref={buttonRef}>Back Button</BackButton>
-      </Link>
+    <StyledContainer>
+      <StyledImage src={visit4} alt="visit4" />
+
       <Link to="/">
         <ReturnButton>Return button</ReturnButton>
       </Link>
-    </Container>
+
+      <Link to="/requestVisit3">
+        <BackButton>Back button</BackButton>
+      </Link>
+
+      <Link to="/requestVisit5">
+        <NextButton>Next button</NextButton>
+      </Link>
+    </StyledContainer>
   );
 }
-const Container = styled.div`
-  position: relative; /* Ensure absolute positioning works */
-  width: 100%;
-  height: 140vh; /* Full height for the container */
-  overflow: hidden; /* Prevent overflow */
+
+const StyledContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
 `;
 
-const Img = styled.img`
+const StyledImage = styled.img`
   width: 100%;
   height: auto;
-`;
-
-const NextButton = styled.button`
-  width: 40%;
-  height: 10%;
-  position: absolute; /* Position it absolutely */
-  top: 90%;
-  left: 50%;
-  right: 0%;
-  opacity: 0;
+  z-index: -1;
+  box-sizing: border-box;
 `;
 
 const BackButton = styled.button`
-  width: 40%;
-  height: 10%; /* Make it half the height of the container */
-  top: 90%; /* Space between buttons */
-  left: 10%;
-  position: absolute; /* Position relative to the container */
-  opacity: 0;
+  position: absolute;
+  bottom: 60px;
+  left: 110px;
+  padding: 4rem 10rem;
+  background: red;
+`;
+
+const NextButton = styled.button`
+  position: absolute;
+  bottom: 60px;
+  left: 550px;
+  padding: 4rem 10rem;
+  background: red;
 `;
 
 const ReturnButton = styled.button`
-  width: 30%;
-  height: 10%; /* Make it half the height of the container */
-  top: 2%; /* Space between buttons */
-  left: 0%;
-  position: absolute; /* Position relative to the container */
-  opacity: 0;
+  position: absolute;
+  top: 60px;
+  left: 80px;
+  padding: 4rem 12rem;
+  background: red;
+  /* opacity: 0; */
 `;

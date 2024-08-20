@@ -5,45 +5,61 @@ import visit2 from "../../assets/images/requestToVisit/visit2-2.png";
 
 export default function RequestVisit2() {
   return (
-    <Container>
-      {" "}
-      <Link to="/requestVisit1">
-        <Img src={visit2} alt="visit2"></Img>
-        <HiddenButton>Back Button</HiddenButton>
+    <StyledContainer>
+      <StyledImage src={visit2} alt="visit2"></StyledImage>
+
+      <Link to="/">
+        <ReturnButton>Return</ReturnButton>
       </Link>
+
       <Link to="/requestVisit9">
-        <BackButton>Facescan</BackButton>
+        <ScanButton>Facescan</ScanButton>
       </Link>
-    </Container>
+
+      <Link to="/requestVisit1">
+        <BackButton>Back Button</BackButton>
+      </Link>
+    </StyledContainer>
   );
 }
-const Container = styled.div`
-  position: relative; /* Ensure absolute positioning works */
-  width: 100%;
-  height: 200vh; /* Full height for the container */
-  overflow: hidden; /* Prevent overflow */
+
+const StyledContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
 `;
 
-const Img = styled.img`
+const StyledImage = styled.img`
   width: 100%;
-  height: 100%;
+  height: auto;
+  z-index: -1;
+  box-sizing: border-box;
 `;
 
-const HiddenButton = styled.button`
-  width: 40%;
-  height: 10%;
-  position: absolute; /* Position it absolutely */
-  top: 180%;
-  left: 10%;
-  right: 0%;
-  opacity: 0;
+const ScanButton = styled.button`
+  position: absolute;
+  top: 1650px;
+  left: 200px;
+  padding: 18rem 19rem;
+  background: red;
 `;
 
 const BackButton = styled.button`
-  width: 60%;
-  height: 40%; /* Make it half the height of the container */
-  top: 130%; /* Space between buttons */
-  left: 20%;
-  position: absolute; /* Position relative to the container */
-  opacity: 0;
+  position: absolute;
+  bottom: 120px;
+  left: 80px;
+  padding: 4rem 12rem;
+  background: red;
+`;
+
+const ReturnButton = styled.button`
+  position: absolute;
+  top: 60px;
+  left: 80px;
+  padding: 4rem 12rem;
+  background: red;
+  /* opacity: 0; */
 `;

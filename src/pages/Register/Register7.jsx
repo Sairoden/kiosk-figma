@@ -13,11 +13,11 @@ export default function Register7() {
       <Img src={register7} alt="Register 7" />
 
       <Link to="/">
-        <ReturnButton></ReturnButton>
+        <ReturnButton>ReturnButton</ReturnButton>
       </Link>
 
       <Link to="/">
-        <HomeButton></HomeButton>
+        <HomeButton>HomeButton</HomeButton>
       </Link>
     </StyledContainer>
   );
@@ -37,18 +37,18 @@ const Img = styled.img`
   height: auto;
 `;
 
-const ReturnButton = styled.button`
-  position: absolute;
-  top: 3rem;
-  left: 5rem;
-  padding: 4rem 15rem;
-  opacity: 0;
-`;
-
 const HomeButton = styled.button`
   position: absolute;
-  bottom: -20rem;
-  left: 10rem;
-  padding: 5rem 25rem;
-  opacity: 0;
+  bottom: 280px;
+  left: 150px;
+  padding: 5rem 24rem;
+  background: red;
+`;
+
+const ReturnButton = styled.button`
+  position: absolute;
+  top: 30px;
+  left: 60px;
+  padding: 4rem 15rem;
+  background: red;
 `;

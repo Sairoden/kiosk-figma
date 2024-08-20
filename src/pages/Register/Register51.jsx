@@ -13,11 +13,11 @@ export default function Register51() {
       <Img src={register51} alt="Register 5" />
 
       <Link to="/register4-3">
-        <NextButton></NextButton>
+        <CancelButton>Cancel Button</CancelButton>
       </Link>
 
       <Link to="/register5-3">
-        <NextButton2></NextButton2>
+        <PhotoButton>Photo Button</PhotoButton>
       </Link>
     </StyledContainer>
   );
@@ -37,18 +37,18 @@ const Img = styled.img`
   height: auto;
 `;
 
-const NextButton = styled.button`
+const CancelButton = styled.button`
   position: absolute;
-  bottom: -25rem;
-  right: 6rem;
-  padding: 5rem 25rem;
-  opacity: 0;
+  bottom: 220px;
+  right: 125px;
+  padding: 4rem 22rem;
+  background: red;
 `;
 
-const NextButton2 = styled.button`
+const PhotoButton = styled.button`
   position: absolute;
-  bottom: -15rem;
-  right: 6rem;
-  padding: 5rem 25rem;
-  opacity: 0;
+  bottom: 380px;
+  right: 125px;
+  padding: 4rem 22rem;
+  background: red;
 `;

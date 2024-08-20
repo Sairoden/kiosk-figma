@@ -19,39 +19,36 @@ export default function RequestVisit8() {
   }, [navigate]);
 
   return (
-    <div>
-      <Link to="/requestVisit2">
-        <Img src={visit2} alt="visit1" />
-        <NextButton>fingerprint</NextButton>
-      </Link>
+    <StyledContainer>
+      <StyledImage src={visit2} alt="visit1" />
 
       <Link to="/requestVisit1">
         <BackButton>back</BackButton>
       </Link>
-    </div>
+    </StyledContainer>
   );
 }
 
-const Img = styled.img`
-  width: 100%;
-  height: 100%; /* Maintain aspect ratio */
+const StyledContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
 `;
 
-const NextButton = styled.button`
-  width: 60%;
-  height: 30%;
-  position: absolute; /* Position it absolutely */
-  top: 60%;
-  left: 20%;
-  right: 0%;
-  opacity: 0;
+const StyledImage = styled.img`
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  box-sizing: border-box;
 `;
 
 const BackButton = styled.button`
-  width: 70%;
-  height: 10%; /* Make it half the height of the container */
-  top: 95%; /* Space between buttons */
-  left: 15%;
-  position: absolute; /* Position relative to the container */
-  opacity: 0;
+  position: absolute;
+  top: 1200px;
+  left: 190px;
+  padding: 4rem 22rem;
+  background: red;
 `;

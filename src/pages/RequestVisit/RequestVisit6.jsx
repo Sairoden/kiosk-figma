@@ -5,31 +5,49 @@ import visit6 from "../../assets/images/requestToVisit/visit6.png";
 
 export default function RequestVisit6() {
   return (
-    <Container>
-      {" "}
+    <StyledContainer>
+      <StyledImage src={visit6} alt="visit6" />
+
       <Link to="/">
-        <Img src={visit6} alt="visit6"></Img>
-        <BackButton>Next Button</BackButton>
+        <ReturnButton>Return button</ReturnButton>
       </Link>
-    </Container>
+
+      <Link to="/">
+        <HomeButton>Home button</HomeButton>
+      </Link>
+    </StyledContainer>
   );
 }
-const Container = styled.div`
-  position: relative; /* Ensure absolute positioning works */
-  width: 100%;
-  height: 140vh; /* Full height for the container */
-  overflow: hidden; /* Prevent overflow */
-`;
-const Img = styled.img`
-  width: 100%;
-  height: auto;
+
+const StyledContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
 `;
 
-const BackButton = styled.button`
-  width: 70%;
-  height: 10%; /* Make it half the height of the container */
-  top: 90%; /* Space between buttons */
-  left: 18%;
-  position: absolute; /* Position relative to the container */
-  opacity: 0;
+const StyledImage = styled.img`
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  box-sizing: border-box;
+`;
+
+const HomeButton = styled.button`
+  position: absolute;
+  bottom: 60px;
+  left: 180px;
+  padding: 4rem 20rem;
+  background: red;
+`;
+
+const ReturnButton = styled.button`
+  position: absolute;
+  top: 60px;
+  left: 80px;
+  padding: 4rem 12rem;
+  background: red;
+  /* opacity: 0; */
 `;
