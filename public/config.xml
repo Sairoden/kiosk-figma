@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/KioskFigma" version="0.2.1" viewmodes="maximized">
+    <tizen:application id="8hqDKb6B2g.KioskFigma" package="8hqDKb6B2g" required_version="2.3"/>
+    <author>Ebizolution</author>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.normal.1080.1920"/>
+    <icon src="icon.png"/>
+    <tizen:metadata key="http://samsung.com/tv/metadata/prelaunch.support" value="true"/>
+    <tizen:metadata key="http://tizen.org/metadata/app_ui_type/base_screen_resolution" value="extensive"/>
+    <name>EbizolutionJobs</name>
+    <tizen:content-security-policy>default-src 'self'; connect-src 'self' https://swapi.dev/api/people/1; style-src 'self' 'unsafe-inline';</tizen:content-security-policy>
+
+    <tizen:privilege name="http://tizen.org/privilege/tv.audio"/>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:privilege name="http://tizen.org/privilege/filesystem.read"/>
+    <tizen:privilege name="http://tizen.org/privilege/filesystem.write"/>
+    <tizen:privilege name="http://tizen.org/privilege/mediastorage"/>
+    <tizen:privilege name="http://tizen.org/privilege/externalstorage"/>
+    <tizen:privilege name="http://tizen.org/privilege/mediacapture"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/productinfo"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/network.public"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/b2bcontrol"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/b2bbarcode"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/enhancedappchannel"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/microphone"/>
+    <tizen:privilege name="http://developer.samsung.com/privilege/serialport"/>
+    <tizen:profile name="tv-samsung"/>
+    <tizen:setting screen-orientation="portrait" context-menu="enable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
+</widget>
