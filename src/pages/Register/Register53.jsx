@@ -45,41 +45,24 @@ const StyledImage = styled.img`
 
 const NextButton = styled.button`
   position: absolute;
-<<<<<<< HEAD
-  bottom: 100px;
-  right: 80px;
-  padding: 5rem 13rem;
-=======
   bottom: 90px;
   left: 560px;
   padding: 5rem 11rem;
->>>>>>> b88e871df26a6a4075c83f5daefb1a9dfc5e0f70
   opacity: 0;
 `;
 
 const ReturnButton = styled.button`
   position: absolute;
-<<<<<<< HEAD
-  top: 20px;
-  left: 30px;
-=======
   top: 30px;
   left: 60px;
->>>>>>> b88e871df26a6a4075c83f5daefb1a9dfc5e0f70
   padding: 4rem 15rem;
   opacity: 0;
 `;
 
 const PrevButton = styled.button`
   position: absolute;
-<<<<<<< HEAD
-  bottom: 100px;
-  left: 100px;
-  padding: 5rem 13rem;
-=======
   bottom: 90px;
   left: 100px;
   padding: 5rem 11rem;
->>>>>>> b88e871df26a6a4075c83f5daefb1a9dfc5e0f70
   opacity: 0;
 `;
