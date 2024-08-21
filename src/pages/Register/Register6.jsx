@@ -46,25 +46,15 @@ const StyledImage = styled.img`
 const NextButton = styled.button`
   position: absolute;
   bottom: 620px;
-<<<<<<< HEAD
-  right: 80px;
-  padding: 5rem 13rem;
-=======
   left: 580px;
   padding: 5rem 11rem;
->>>>>>> b88e871df26a6a4075c83f5daefb1a9dfc5e0f70
   opacity: 0;
 `;
 
 const ReturnButton = styled.button`
   position: absolute;
-<<<<<<< HEAD
-  top: 20px;
-  left: 20px;
-=======
   top: 30px;
   left: 60px;
->>>>>>> b88e871df26a6a4075c83f5daefb1a9dfc5e0f70
   padding: 4rem 15rem;
   opacity: 0;
 `;
@@ -73,10 +63,6 @@ const PrevButton = styled.button`
   position: absolute;
   bottom: 620px;
   left: 130px;
-<<<<<<< HEAD
-  padding: 5rem 13rem;
-=======
   padding: 5rem 11rem;
->>>>>>> b88e871df26a6a4075c83f5daefb1a9dfc5e0f70
   opacity: 0;
 `;
