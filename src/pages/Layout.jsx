@@ -1,5 +1,4 @@
 // REACT
-import { useState, useEffect } from "react";
 import { Outlet } from "react-router-dom";
 
 // STYLES
@@ -15,9 +14,7 @@ export default function Layout() {
         <img src={camera} alt="camera" />
       </ImageWrapper>
 
-      <div>
-        <Outlet />
-      </div>
+      <Outlet />
     </div>
   );
 }
