@@ -5,57 +5,61 @@ import visit5 from "../../assets/images/requestToVisit/visit5.png";
 
 export default function RequestVisit5() {
   return (
-    <Container>
-      {" "}
-      <Link to="/requestVisit6">
-        <Img src={visit5} alt="visit5"></Img>
-        <NextButton>Next Button</NextButton>
-      </Link>
-      <Link to="/requestVisit4">
-        <BackButton>Back Button</BackButton>
-      </Link>
+    <StyledContainer>
+      <StyledImage src={visit5} alt="visit4" />
+
       <Link to="/">
         <ReturnButton>Return button</ReturnButton>
       </Link>
-    </Container>
+
+      <Link to="/requestVisit4">
+        <BackButton>Back button</BackButton>
+      </Link>
+
+      <Link to="/requestVisit6">
+        <NextButton>Next button</NextButton>
+      </Link>
+    </StyledContainer>
   );
 }
-const Container = styled.div`
-  position: relative; /* Ensure absolute positioning works */
-  width: 100%;
-  height: 100vh; /* Full height for the container */
-  overflow: hidden; /* Prevent overflow */
+
+const StyledContainer = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
 `;
 
-const Img = styled.img`
+const StyledImage = styled.img`
   width: 100%;
   height: auto;
-`;
-
-const NextButton = styled.button`
-  width: 40%;
-  height: 10%;
-  position: absolute; /* Position it absolutely */
-  top: 84%;
-  left: 50%;
-  right: 0%;
-  opacity: 0;
+  z-index: -1;
+  box-sizing: border-box;
 `;
 
 const BackButton = styled.button`
-  width: 40%;
-  height: 10%; /* Make it half the height of the container */
-  top: 84%; /* Space between buttons */
-  left: 10%;
-  position: absolute; /* Position relative to the container */
+  position: absolute;
+  bottom: 620px;
+  left: 110px;
+  padding: 4rem 10rem;
+  opacity: 0;
+`;
+
+const NextButton = styled.button`
+  position: absolute;
+  bottom: 620px;
+  left: 550px;
+  padding: 4rem 10rem;
   opacity: 0;
 `;
 
 const ReturnButton = styled.button`
-  width: 30%;
-  height: 10%; /* Make it half the height of the container */
-  top: 2%; /* Space between buttons */
-  left: 0%;
-  position: absolute; /* Position relative to the container */
+  position: absolute;
+  top: 60px;
+  left: 80px;
+  padding: 4rem 12rem;
   opacity: 0;
+  /* opacity: 0; */
 `;

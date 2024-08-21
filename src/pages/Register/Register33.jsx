@@ -16,7 +16,7 @@ export default function Register33() {
         <ReturnButton></ReturnButton>
       </Link>
 
-      <Link to="/register3-1">
+      <Link to="/register2">
         <PrevButton></PrevButton>
       </Link>
 
