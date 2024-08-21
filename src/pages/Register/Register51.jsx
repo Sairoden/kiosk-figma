@@ -10,7 +10,7 @@ import register51 from "../../assets/images/registration/register5-1.png";
 export default function Register51() {
   return (
     <StyledContainer>
-      <Img src={register51} alt="Register 5" />
+      <StyledImage src={register51} alt="Register 5" />
 
       <Link to="/register4-3">
         <NextButton></NextButton>
@@ -32,23 +32,24 @@ const StyledContainer = styled.div`
   box-sizing: border-box;
 `;
 
-const Img = styled.img`
+const StyledImage = styled.img`
   width: 100%;
   height: auto;
+  z-index: -1;
+  box-sizing: border-box;
 `;
-
 const NextButton = styled.button`
   position: absolute;
-  bottom: -25rem;
-  right: 6rem;
+  bottom: 200px;
+  right: 120px;
   padding: 5rem 25rem;
   opacity: 0;
 `;
 
 const NextButton2 = styled.button`
   position: absolute;
-  bottom: -15rem;
-  right: 6rem;
+  bottom: 380px;
+  right: 120px;
   padding: 5rem 25rem;
   opacity: 0;
 `;

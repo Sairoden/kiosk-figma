@@ -10,7 +10,7 @@ import register7 from "../../assets/images/registration/register7.png";
 export default function Register7() {
   return (
     <StyledContainer>
-      <Img src={register7} alt="Register 7" />
+      <StyledImage src={register7} alt="Register 7" />
 
       <Link to="/">
         <ReturnButton></ReturnButton>
@@ -32,23 +32,25 @@ const StyledContainer = styled.div`
   box-sizing: border-box;
 `;
 
-const Img = styled.img`
+const StyledImage = styled.img`
   width: 100%;
   height: auto;
+  z-index: -1;
+  box-sizing: border-box;
 `;
 
 const ReturnButton = styled.button`
   position: absolute;
-  top: 3rem;
-  left: 5rem;
+  top: 20px;
+  left: 20px;
   padding: 4rem 15rem;
   opacity: 0;
 `;
 
 const HomeButton = styled.button`
   position: absolute;
-  bottom: -20rem;
-  left: 10rem;
+  bottom: 300px;
+  left: 100px;
   padding: 5rem 25rem;
   opacity: 0;
 `;

@@ -10,7 +10,7 @@ import register6 from "../../assets/images/registration/register6.png";
 export default function Register6() {
   return (
     <StyledContainer>
-      <Img src={register6} alt="Register 6" />
+      <StyledImage src={register6} alt="Register 6" />
 
       <Link to="/">
         <ReturnButton></ReturnButton>
@@ -36,31 +36,33 @@ const StyledContainer = styled.div`
   box-sizing: border-box;
 `;
 
-const Img = styled.img`
+const StyledImage = styled.img`
   width: 100%;
   height: auto;
+  z-index: -1;
+  box-sizing: border-box;
 `;
 
 const NextButton = styled.button`
   position: absolute;
-  bottom: 0rem;
-  right: 5rem;
+  bottom: 620px;
+  right: 80px;
   padding: 5rem 13rem;
   opacity: 0;
 `;
 
 const ReturnButton = styled.button`
   position: absolute;
-  top: 3rem;
-  left: 2rem;
+  top: 20px;
+  left: 20px;
   padding: 4rem 15rem;
   opacity: 0;
 `;
 
 const PrevButton = styled.button`
   position: absolute;
-  bottom: 0rem;
-  left: 10rem;
+  bottom: 620px;
+  left: 130px;
   padding: 5rem 13rem;
   opacity: 0;
 `;
