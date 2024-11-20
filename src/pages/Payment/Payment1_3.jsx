@@ -4,7 +4,7 @@ import payment1_3 from "../../assets/images/payment/payment1.3.png";
 
 export default function Payment1_3() {
   return (
-     // File case + Juridicial
+    // File case + Juridicial
     <StyledContainer>
       <StyledImage src={payment1_3} alt="payment1.3" />
 
