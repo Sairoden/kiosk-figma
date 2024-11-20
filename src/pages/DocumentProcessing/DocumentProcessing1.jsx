@@ -51,13 +51,13 @@ const StyledButton = styled.div`
   justify-content: center; */
   position: absolute;
   top: 6%; //Adjust as needed
-  left: 11%;
+  left: 25%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
 `;
 
 const StyledButtonBack = styled.button`
-  padding: 15px;
+  padding: 15px 150px;
   font-size: 16px;
   cursor: pointer;
   z-index: 1;
@@ -74,7 +74,7 @@ const StyledButtons = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
-  top: 41.5%; //Adjust as needed
+  top: 37.5%; //Adjust as needed
   left: 50%;
   transform: translate(-50%, -50%);
   box-sizing: border-box;
