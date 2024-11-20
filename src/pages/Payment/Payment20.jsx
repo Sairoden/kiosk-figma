@@ -44,7 +44,7 @@ const ReturnButton = styled.button`
   top: 60px;
   left: 80px;
   padding: 3rem 11rem;
-  /* opacity: 0; */
+  opacity: 0;
 `;
 
 const TapToPayButton = styled.button`

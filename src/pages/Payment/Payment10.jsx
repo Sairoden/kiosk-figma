@@ -54,7 +54,7 @@ const SelectButton = styled.button`
   left: 155px;
   padding: 1.7rem 22.5rem;
   background-color: transparent;
-  /* opacity: 0; */
+  opacity: 0;
 `;
 
 const CaseButton = styled.button`
@@ -63,7 +63,7 @@ const CaseButton = styled.button`
   left: 155px;
   padding: 1.7rem 22.5rem;
   background-color: transparent;
-  /* opacity: 0; */
+  opacity: 0;
 `;
 
 const CaseTypeButton = styled.button`
@@ -72,7 +72,7 @@ const CaseTypeButton = styled.button`
   left: 155px;
   padding: 12rem 21.5rem;
   background-color: transparent;
-  /* opacity: 0; */
+  opacity: 0;
 `;
 
 const ReturnButton = styled.button`
@@ -81,7 +81,7 @@ const ReturnButton = styled.button`
   left: 80px;
   padding: 1rem 8rem;
   background-color: transparent;
-  /* opacity: 0; */
+  opacity: 0;
 `;
 
 const BackButton = styled.button`
@@ -90,7 +90,7 @@ const BackButton = styled.button`
   left: 155px;
   padding: 3.2rem 8.5rem;
   background-color: transparent;
-  /* opacity: 0; */
+  opacity: 0;
 `;
 
 const NextButton = styled.button`
@@ -99,5 +99,5 @@ const NextButton = styled.button`
   right: 150px;
   padding: 3.2rem 8.6rem;
   background-color: transparent;
-  /* opacity: 0; */
+  opacity: 0;
 `;

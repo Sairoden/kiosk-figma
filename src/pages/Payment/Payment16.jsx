@@ -52,7 +52,7 @@ const ReturnButton = styled.button`
   top: 60px;
   left: 80px;
   padding: 3rem 11rem;
-  /* opacity: 0; */
+  opacity: 0;
   background: red;
 `;
 
@@ -61,7 +61,7 @@ const PrevButton = styled.button`
   bottom: 130px;
   right: 550px;
   padding: 4rem 12rem;
-  /* opacity: 0; */
+  opacity: 0;
   background: red;
 `;
 
@@ -70,7 +70,7 @@ const ServiceDetailsButton = styled.button`
   top: 1120px;
   right: 155px;
   padding: 8.5rem 24rem;
-  /* opacity: 0; */
+  opacity: 0;
   background: red;
 `;
 
@@ -79,6 +79,6 @@ const PersonalInformationButton = styled.button`
   top: 1430px;
   right: 155px;
   padding: 2.5rem 24rem;
-  /* opacity: 0; */
+  opacity: 0;
   background: blue;
 `;

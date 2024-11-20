@@ -62,7 +62,7 @@ const FileButton = styled.button`
   left: 155px;
   padding: 2.5rem 7.8rem;
   background-color: transparent;
-  /* opacity: 0; */
+  opacity: 0;
 `;
 
 const FilingButton = styled.button`
@@ -71,7 +71,7 @@ const FilingButton = styled.button`
   left: 477px;
   padding: 2.5rem 7.5rem;
   background-color: transparent;
-  /* opacity: 0; */
+  opacity: 0;
 `;
 
 const OtherButton = styled.button`
@@ -80,7 +80,7 @@ const OtherButton = styled.button`
   left: 765px;
   padding: 2.5rem 3.9rem;
   background-color: transparent;
-  /* opacity: 0; */
+  opacity: 0;
 `;
 
 const IndividualButton = styled.button`
@@ -89,7 +89,7 @@ const IndividualButton = styled.button`
   left: 155px;
   padding: 2.5rem 2.7rem;
   background-color: transparent;
-  /* opacity: 0; */
+  opacity: 0;
 `;
 
 const JuridicialButton = styled.button`
@@ -98,7 +98,7 @@ const JuridicialButton = styled.button`
   left: 310px;
   padding: 2.5rem 2.9rem;
   background-color: transparent;
-  /* opacity: 0; */
+  opacity: 0;
 `;
 
 const ReturnButton = styled.button`
@@ -107,7 +107,7 @@ const ReturnButton = styled.button`
   left: 80px;
   padding: 1rem 8rem;
   background-color: transparent;
-  /* opacity: 0; */
+  opacity: 0;
 `;
 
 const BackButton = styled.button`
@@ -116,7 +116,7 @@ const BackButton = styled.button`
   left: 150px;
   padding: 3.5rem 8.3rem;
   background-color: transparent;
-  /* opacity: 0; */
+  opacity: 0;
 `;
 
 const NextButton = styled.button`
@@ -125,5 +125,5 @@ const NextButton = styled.button`
   right: 150px;
   padding: 3.5rem 8.7rem;
   background-color: transparent;
-  /* opacity: 0; */
+  opacity: 0;
 `;

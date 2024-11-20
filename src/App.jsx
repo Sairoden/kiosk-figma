@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 // REACT
 import { HashRouter, Routes, Route } from "react-router-dom";
 

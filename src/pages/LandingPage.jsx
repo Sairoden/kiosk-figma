@@ -18,7 +18,7 @@ export default function YourComponent() {
         <Link to="/documentProcessing1">
           <StyledButton2>Document Processing</StyledButton2>
         </Link>
-        <Link to="/payment13">
+        <Link to="/payment1">
           <StyledButton3>Payment Payment</StyledButton3>
         </Link>
         <Link to="/requestVisit1">

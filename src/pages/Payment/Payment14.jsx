@@ -52,7 +52,7 @@ const ReturnButton = styled.button`
   top: 60px;
   left: 80px;
   padding: 3rem 11rem;
-  /* opacity: 0; */
+  opacity: 0;
   background: red;
 `;
 
@@ -61,7 +61,7 @@ const PrevButton = styled.button`
   bottom: 130px;
   right: 550px;
   padding: 4rem 12rem;
-  /* opacity: 0; */
+  opacity: 0;
   background: red;
 `;
 
@@ -70,7 +70,7 @@ const RequestDetailsButton = styled.button`
   top: 620px;
   right: 155px;
   padding: 5.7rem 24rem;
-  /* opacity: 0; */
+  opacity: 0;
   background: red;
 `;
 
@@ -80,5 +80,5 @@ const CourtDetailsButton = styled.button`
   right: 155px;
   padding: 2.5rem 24rem;
   opacity: 0;
-  /* background: blue; */
+  background: blue;
 `;
