@@ -1,21 +1,22 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import payment1 from "../../assets/images/payment/payment1.png";
+import payment1_11 from "../../assets/images/payment/payment1.11.png";
 
-export default function Payment1() {
+export default function Payment1_11() {
   return (
+    // Juridicial
     <StyledContainer>
-      <StyledImage src={payment1} alt="payment1" />
+      <StyledImage src={payment1_11} alt="payment1.11" />
 
-      <Link to="/payment1_1">
+      <Link to="/payment1_3">
         <FileButton>File Case</FileButton>
       </Link>
 
-      <Link to="/payment1_4">
+      <Link to="/payment1_6">
         <FilingButton>Filing</FilingButton>
       </Link>
 
-      <Link to="/payment1_7">
+      <Link to="/payment1_9">
         <OtherButton>Other</OtherButton>
       </Link>
 
@@ -35,7 +36,7 @@ export default function Payment1() {
         <BackButton>Cancel button</BackButton>
       </Link>
 
-      <NextButton>Next button</NextButton>
+        <NextButton>Next button</NextButton>
     </StyledContainer>
   );
 }
@@ -96,7 +97,7 @@ const JuridicialButton = styled.button`
   position: absolute;
   top: 905px;
   left: 310px;
-  padding: 2.5rem 2.9rem;
+  padding: 2.5rem 2.85rem;
   background-color: transparent;
   /* opacity: 0; */
 `;
@@ -112,18 +113,18 @@ const ReturnButton = styled.button`
 
 const BackButton = styled.button`
   position: absolute;
-  bottom: 180px;
-  left: 150px;
-  padding: 3.5rem 8.3rem;
+  bottom: 370px;
+  left: 155px;
+  padding: 3.5rem 8rem;
   background-color: transparent;
   /* opacity: 0; */
 `;
 
 const NextButton = styled.button`
   position: absolute;
-  bottom: 180px;
+  bottom: 370px;
   right: 150px;
-  padding: 3.5rem 8.7rem;
+  padding: 3.5rem 8.6rem;
   background-color: transparent;
   /* opacity: 0; */
 `;
