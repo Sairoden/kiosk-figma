@@ -1,19 +1,18 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import visit6 from "../../assets/images/requestToVisit/Visit6.png";
+import payment1 from "../../assets/images/payment/payment1.png";
 
-export default function RequestVisit6() {
+export default function Payment1() {
   return (
     <StyledContainer>
-      <StyledImage src={visit6} alt="visit6" />
+      <StyledImage src={payment1} alt="payment1" />
 
       <Link to="/">
-        <ReturnButton>Return button</ReturnButton>
+        <BackButton>Cancel button</BackButton>
       </Link>
 
       <Link to="/">
-        <HomeButton>Home button</HomeButton>
+        <ReturnButton>Return button</ReturnButton>
       </Link>
     </StyledContainer>
   );
@@ -35,19 +34,18 @@ const StyledImage = styled.img`
   box-sizing: border-box;
 `;
 
-const HomeButton = styled.button`
+const BackButton = styled.button`
   position: absolute;
-  bottom: 60px;
-  left: 180px;
-  padding: 4rem 20rem;
-  opacity: 0;
+  bottom: 120px;
+  left: 80px;
+  padding: 4rem 4rem;
+  /* opacity: 0; */
 `;
 
 const ReturnButton = styled.button`
   position: absolute;
-  top: 60px;
+  top: 90px;
   left: 80px;
-  padding: 4rem 12rem;
-  opacity: 0;
+  padding: 1rem 8rem;
   /* opacity: 0; */
 `;

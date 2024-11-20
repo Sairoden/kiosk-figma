@@ -38,6 +38,9 @@ import {
   RequestVisit7,
   RequestVisit8,
   RequestVisit9,
+
+  // PAYMENT
+  Payment1,
 } from "./pages";
 
 function App() {
@@ -115,6 +118,8 @@ function App() {
             path="/documentProcessing7"
             element={<DocumentProcessing7 />}
           />
+          {/* PAYMENT */}
+          <Route path="/payment1" element={<Payment1 />} />
         </Routes>
       </HashRouter>
     </>

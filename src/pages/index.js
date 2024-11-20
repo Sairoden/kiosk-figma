@@ -36,3 +36,6 @@ export { default as RequestVisit6 } from "./RequestVisit/RequestVisit6.jsx";
 export { default as RequestVisit7 } from "./RequestVisit/RequestVisit7.jsx";
 export { default as RequestVisit8 } from "./RequestVisit/RequestVisit8.jsx";
 export { default as RequestVisit9 } from "./RequestVisit/RequestVisit9.jsx";
+
+// PAYMENT
+export { default as Payment1 } from "./Payment/Payment1.jsx";
