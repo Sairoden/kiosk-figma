@@ -12,11 +12,13 @@ export default function DocumentProcessing7() {
   return (
     <StyledContainer>
       <StyledImage src={dp7} alt="" />
+
       <StyledButton>
         <Link to="/">
           <StyledButtonBack>Back</StyledButtonBack>
         </Link>
       </StyledButton>
+
       <StyledButtons>
         <Link to="/">
           <StyledButton1>Return to Home</StyledButton1>
@@ -84,16 +86,5 @@ const StyledButton1 = styled.button`
   z-index: 1;
   background-color: #3f51b549;
   /* border-radius: 30px; */
-  opacity: 0;
-`;
-
-const StyledButton2 = styled.button`
-  margin-top: 43px;
-  padding: 115px 400px;
-  font-size: 16px;
-  cursor: pointer;
-  z-index: 1;
-  background-color: #3f51b549;
-  border-radius: 30px;
   opacity: 0;
 `;

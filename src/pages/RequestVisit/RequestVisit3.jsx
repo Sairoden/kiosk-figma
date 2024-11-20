@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import visit3 from "../../assets/images/requestToVisit/visit3-2.png";
-import { useRef } from "react";
 
 export default function RequestVisit3() {
   return (

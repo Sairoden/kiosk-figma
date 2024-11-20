@@ -41,6 +41,20 @@ import {
 
   // PAYMENT
   Payment1,
+  Payment10,
+  Payment11,
+  Payment12,
+  Payment13,
+  Payment14,
+  Payment15,
+  Payment16,
+  Payment17,
+  Payment18,
+  Payment19,
+  Payment20,
+  Payment21,
+  Payment22,
+  Payment23,
 } from "./pages";
 
 function App() {
@@ -118,8 +132,23 @@ function App() {
             path="/documentProcessing7"
             element={<DocumentProcessing7 />}
           />
+
           {/* PAYMENT */}
           <Route path="/payment1" element={<Payment1 />} />
+          <Route path="/payment10" element={<Payment10 />} />
+          <Route path="/payment11" element={<Payment11 />} />
+          <Route path="/payment12" element={<Payment12 />} />
+          <Route path="/payment13" element={<Payment13 />} />
+          <Route path="/payment14" element={<Payment14 />} />
+          <Route path="/payment15" element={<Payment15 />} />
+          <Route path="/payment16" element={<Payment16 />} />
+          <Route path="/payment17" element={<Payment17 />} />
+          <Route path="/payment18" element={<Payment18 />} />
+          <Route path="/payment19" element={<Payment19 />} />
+          <Route path="/payment20" element={<Payment20 />} />
+          <Route path="/payment21" element={<Payment21 />} />
+          <Route path="/payment22" element={<Payment22 />} />
+          <Route path="/payment23" element={<Payment23 />} />
         </Routes>
       </HashRouter>
     </>

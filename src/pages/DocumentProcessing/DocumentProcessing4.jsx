@@ -62,36 +62,3 @@ const StyledButtonBack = styled.button`
   border-radius: 30px;
   opacity: 0;
 `;
-
-const StyledButtons = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 41.5%; // Adjust as needed
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-sizing: border-box;
-`;
-
-const StyledButton1 = styled.button`
-  padding: 105px 400px;
-  font-size: 16px;
-  cursor: pointer;
-  z-index: 1;
-  background-color: #3f51b549;
-  opacity: 0;
-  border-radius: 30px;
-`;
-
-const StyledButton2 = styled.button`
-  margin-top: 43px;
-  padding: 115px 400px;
-  font-size: 16px;
-  cursor: pointer;
-  z-index: 1;
-  opacity: 0;
-  background-color: #3f51b549;
-  border-radius: 30px;
-`;
