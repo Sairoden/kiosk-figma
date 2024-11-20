@@ -53,4 +53,5 @@ const TapToPayButton = styled.button`
   right: 550px;
   padding: 9rem 10rem;
   background: red;
+  opacity: 0;
 `;
