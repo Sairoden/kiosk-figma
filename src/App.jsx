@@ -41,9 +41,41 @@ import {
 
   // PAYMENT
   Payment1,
+  Payment1_1,
+  Payment1_2,
+  Payment1_3,
+  Payment1_4,
+  Payment1_5,
+  Payment1_6,
+  Payment1_7,
+  Payment1_8,
+  Payment1_9,
+  Payment1_10,
+  Payment1_11,
+  Payment2,
+  Payment2_1,
+  Payment2_2,
+  Payment2_3,
+  Payment2_4,
+  Payment2_5,
+  Payment3,
+  Payment3_1,
+  Payment3_2,
+  Payment3_3,
+  Payment3_4,
+  Payment3_5,
+  Payment4,
+  Payment5,
+  Payment6,
+  Payment7,
+  Payment8,
+  Payment9,
   Payment10,
+  Payment10_1,
   Payment11,
+  Payment11_1,
   Payment12,
+  // ---
   Payment13,
   Payment14,
   Payment15,
@@ -135,9 +167,41 @@ function App() {
 
           {/* PAYMENT */}
           <Route path="/payment1" element={<Payment1 />} />
+          <Route path="/payment1_1" element={<Payment1_1 />} />
+          <Route path="/payment1_2" element={<Payment1_2 />} />
+          <Route path="/payment1_3" element={<Payment1_3 />} />
+          <Route path="/payment1_4" element={<Payment1_4 />} />
+          <Route path="/payment1_5" element={<Payment1_5 />} />
+          <Route path="/payment1_6" element={<Payment1_6 />} />
+          <Route path="/payment1_7" element={<Payment1_7 />} />
+          <Route path="/payment1_8" element={<Payment1_8 />} />
+          <Route path="/payment1_9" element={<Payment1_9 />} />
+          <Route path="/payment1_10" element={<Payment1_10 />} />
+          <Route path="/payment1_11" element={<Payment1_11 />} />
+          <Route path="/payment2" element={<Payment2 />} />
+          <Route path="/payment2_1" element={<Payment2_1 />} />
+          <Route path="/payment2_2" element={<Payment2_2 />} />
+          <Route path="/payment2_3" element={<Payment2_3 />} />
+          <Route path="/payment2_4" element={<Payment2_4 />} />
+          <Route path="/payment2_5" element={<Payment2_5 />} />
+          <Route path="/payment3" element={<Payment3 />} />
+          <Route path="/payment3_1" element={<Payment3_1 />} />
+          <Route path="/payment3_2" element={<Payment3_2 />} />
+          <Route path="/payment3_3" element={<Payment3_3 />} />
+          <Route path="/payment3_4" element={<Payment3_4 />} />
+          <Route path="/payment3_5" element={<Payment3_5 />} />
+          <Route path="/payment4" element={<Payment4 />} />
+          <Route path="/payment5" element={<Payment5 />} />
+          <Route path="/payment6" element={<Payment6 />} />
+          <Route path="/payment7" element={<Payment7 />} />
+          <Route path="/payment8" element={<Payment8 />} />
+          <Route path="/payment9" element={<Payment9 />} />
           <Route path="/payment10" element={<Payment10 />} />
+          <Route path="/payment10_1" element={<Payment10_1 />} />
           <Route path="/payment11" element={<Payment11 />} />
+          <Route path="/payment11_1" element={<Payment11_1 />} />
           <Route path="/payment12" element={<Payment12 />} />
+
           <Route path="/payment13" element={<Payment13 />} />
           <Route path="/payment14" element={<Payment14 />} />
           <Route path="/payment15" element={<Payment15 />} />
